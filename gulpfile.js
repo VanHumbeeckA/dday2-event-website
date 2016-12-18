@@ -20,7 +20,8 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function () {
-    gulp.src(collections.html).pipe(connect.reload());
+    gulp.src(collections.html)
+        .pipe(connect.reload());
 });
 
 gulp.task('watch', function () {
