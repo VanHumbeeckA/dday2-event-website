@@ -36,13 +36,10 @@ export class TimeTableComponent {
         this.timetable = new Timetable();
         let min = parseInt(this.minHour) || 12;
         let max = parseInt(this.maxHour) || 23;
-        this.$log.info(this.minHour);
         this.timetable.setScope(min, max);
-
         this.timetable.addLocations(this.locations);
 
         forEach(this.ddayEvents, (event, k) => {
-            this.$log.info(event.name);
             this.timetable.addEvent(event.name, event.location, event.startDate, event.endDate, event.options)
         });
 

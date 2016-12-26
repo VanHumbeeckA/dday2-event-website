@@ -1,0 +1,30 @@
+@import "variables";
+
+.row-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+li.dd-btn-pills {
+
+  &> a.nav-link {
+    color: $pkp-dark-light-text;
+  }
+
+  &.active > a.nav-link {
+    background-color: $pkp-light;
+    color: $pkp-dark-text;
+  }
+
+}
+
+.dd-event-tab {
+  background-color: $pkp-dark-light;
+  margin-top: 1em;
+  padding: 1em;
+
+  h1,h2,h3,h4,p {
+    color: $pkp-dark-text;
+  }
+
+}
