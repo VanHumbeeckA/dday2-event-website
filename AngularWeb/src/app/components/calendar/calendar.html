@@ -1,0 +1,303 @@
+<div class="wrapper s--dark-blue">
+    <div class="schedule">
+        <div class="schedule-stage-menu">
+            <a class="schedule-stage-menu__close" href="#"><i class="icon icon--cross"></i></a>
+
+            <ul class="schedule-stage-menu__list">
+                <li class="s--main-stage">
+                    <a href="#main-stage" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/main-stage.svg" alt="Main Stage">
+                    </a>
+                </li>
+                <li class="s--marquee">
+                    <a href="#marquee" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/marquee.svg" alt="Marquee">
+                    </a>
+                </li>
+                <li class="s--dance-hall">
+                    <a href="#dance-hall" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/dance-hall.svg" alt="Dance Hall">
+                    </a>
+                </li>
+                <li class="s--the-shelter">
+                    <a href="#the-shelter" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/the-shelter.svg" alt="The Shelter">
+                    </a>
+                </li>
+                <li class="s--boiler-room">
+                    <a href="#boiler-room" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/boiler-room.svg" alt="Boiler Room">
+                    </a>
+                </li>
+                <li class="s--club">
+                    <a href="#club" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/club.svg" alt="Club">
+                    </a>
+                </li>
+                <li class="s--castello">
+                    <a href="#castello" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/castello.svg" alt="Castello">
+                    </a>
+                </li>
+                <li class="s--lift">
+                    <a href="#lift" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/lift.svg" alt="Lift">
+                    </a>
+                </li>
+                <li class="s--booth">
+                    <a href="#booth" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/booth.svg" alt="Booth">
+                    </a>
+                </li>
+                <li class="s--wablief">
+                    <a href="#wablief" class="schedule-stage-menu__link">
+                        <img class="schedule-stage-menu__image" src="https://www.pukkelpop.be/assets/default/images/stages-white/wablief.svg" alt="Wablief?!">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="schedule__wrapper">
+
+            <div class="schedule__hours">
+                <div class="schedule__hours__hour" style="height: 102px" ng-repeat="block in CalendarCtrl.hourBlocks">
+                    <span class="schedule__hours__label">{{block.hour}}</span>
+                </div>
+            </div>
+
+            <div class="schedule__scroll js-schedule-scroll-wrapper main-wrapper">
+                <div class="schedule__stages js-schedule-scroller">
+                    <div class="schedule__stage s--stage--main-stage" ng-repeat="session in CalendarCtrl.sessions">
+                        <h2 id="main-stage" class="schedule__stage__title">{{session.title}}</h2>
+
+                        <ul class="schedule__stage__acts">
+                            <li class="schedule__act s--id-4476" style="height: 127.5px; margin-top: 204px;">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">{{session.from}} - {{session.until}}</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/the-boilerboys/" target="_blank" class="schedule__act__link">The Boilerboys</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--boiler-room">
+                        <h2 id="boiler-room" class="schedule__stage__title">Boiler Room<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                            <li class="schedule__act s--id-4476" style="height: 127.5px; margin-top: 204px;" data-act-id="4476" data-act-name="the-boilerboys">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">20:00 - 21:15</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/the-boilerboys/" target="_blank" class="schedule__act__link">The Boilerboys</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4726" style="height: 127.5px; margin-top: -0px;" data-act-id="4726" data-act-name="ilse-liebens">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">21:15 - 22:30</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/ilse-liebens/" target="_blank" class="schedule__act__link">Ilse Liebens</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4626" style="height: 204px; margin-top: -0px;" data-act-id="4626" data-act-name="freres-deluxe">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">22:30 - 00:30</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/freres-deluxe/" target="_blank" class="schedule__act__link">Frères Deluxe</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4776" style="height: 204px; margin-top: -0px;" data-act-id="4776" data-act-name="laston-geo">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">00:30 - 02:30</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/laston-geo/" target="_blank" class="schedule__act__link">Laston &amp; Geo</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4451" style="height: 153px; margin-top: -0px;" data-act-id="4451" data-act-name="the-boilerboys">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">02:30 - 04:00</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/the-boilerboys/" target="_blank" class="schedule__act__link">The Boilerboys</a></h3>
+                                    <span class="schedule__act__stage">Boiler Room</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--club">
+                        <h2 id="club" class="schedule__stage__title">Club<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--castello">
+                        <h2 id="castello" class="schedule__stage__title">Castello<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                            <li class="schedule__act s--id-4851" style="height: 68px; margin-top: 68px;" data-act-id="4851" data-act-name="manoeuvres">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">18:40 - 19:20</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/manoeuvres/" target="_blank" class="schedule__act__link">Manoeuvres</a></h3>
+                                    <span class="schedule__act__stage">Castello</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4551" style="height: 76.5px; margin-top: 51px;" data-act-id="4551" data-act-name="faces-on-tv">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">19:50 - 20:35</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/faces-on-tv/" target="_blank" class="schedule__act__link">Faces On TV</a></h3>
+                                    <span class="schedule__act__stage">Castello</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-5326 s--favorite" style="height: 85px; margin-top: 68px;" data-act-id="5326" data-act-name="school-is-cool">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">21:15 - 22:05</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/school-is-cool/" target="_blank" class="schedule__act__link">School Is Cool</a></h3>
+                                    <span class="schedule__act__stage">Castello</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-3076" style="height: 102px; margin-top: 68px;" data-act-id="3076" data-act-name="admiral-freebee">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">22:45 - 23:45</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/admiral-freebee/" target="_blank" class="schedule__act__link">Admiral Freebee</a></h3>
+                                    <span class="schedule__act__stage">Castello</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4826" style="height: 102px; margin-top: 68px;" data-act-id="4826" data-act-name="magnus">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">00:25 - 01:25</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/magnus/" target="_blank" class="schedule__act__link">Magnus </a></h3>
+                                    <span class="schedule__act__stage">Castello</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--lift">
+                        <h2 id="lift" class="schedule__stage__title">Lift<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--booth">
+                        <h2 id="booth" class="schedule__stage__title">Booth<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                            <li class="schedule__act s--id-4176" style="height: 204px; margin-top: 204px;" data-act-id="4176" data-act-name="konna">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">20:00 - 22:00</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/konna/" target="_blank" class="schedule__act__link">Konna</a></h3>
+                                    <span class="schedule__act__stage">Booth</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4251" style="height: 204px; margin-top: -0px;" data-act-id="4251" data-act-name="lee-davon">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">22:00 - 00:00</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/lee-davon/" target="_blank" class="schedule__act__link">Lee Davon</a></h3>
+                                    <span class="schedule__act__stage">Booth</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                            <li class="schedule__act s--id-4151" style="height: 204px; margin-top: -0px;" data-act-id="4151" data-act-name="gewelt">
+                                <div class="schedule__act__content">
+                                    <span class="schedule__act__time">00:00 - 02:00</span>
+
+                                    <h3 class="schedule__act__name"><a href="https://www.pukkelpop.be/en/bands/gewelt/" target="_blank" class="schedule__act__link">Gewelt</a></h3>
+                                    <span class="schedule__act__stage">Booth</span>
+                                </div>
+
+                                <span class="schedule__act__favorite">
+                                        <i class="icon"></i>
+                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedule__stage s--stage--wablief">
+                        <h2 id="wablief" class="schedule__stage__title">Wablief?!<span class="schedule__stage__menu-button js-schedule-menu-trigger">Pick stage</span></h2>
+
+                        <ul class="schedule__stage__acts">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script nonce="f4d616110ec92e06252f">
+        // Catch print
+        if (window.matchMedia) {
+            var mediaQueryList = window.matchMedia('print');
+            mediaQueryList.addListener(function(mql) {
+                if (mql.matches) {
+                    beforePrint();
+                }
+            });
+        }
+        window.onbeforeprint = beforePrint;
+
+        function beforePrint() {
+            window.location = '../print/';
+        }
+    </script>
+
+</div>
