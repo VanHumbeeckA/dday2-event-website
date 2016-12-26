@@ -8,7 +8,6 @@ require('../../node_modules/bootstrap/dist/js/bootstrap.min');
 import {Module} from 'angular-decorators';
 import "angular";
 import 'angular-ui-router';
-import 'zone.js';
 import 'reflect-metadata';
 import 'angular-animate';
 import 'angular-sanitize';
