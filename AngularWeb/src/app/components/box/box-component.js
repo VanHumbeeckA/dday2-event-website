@@ -1,25 +1,29 @@
-import {Component, Inject, View, Transclude} from "angular-decorators";
+import {Component, Inject, View, Transclude, Require} from "angular-decorators";
 
 @Component({
     selector: 'box',
     controllerAs: 'BoxCtrl',
     properties: [
         '@imageSrc',
+        '@imageUrl',
         '@title',
         '@isOdd'
     ]
 })
 @View({ template: require('./box.html')})
-@Inject('$q')
 @Transclude
+@Require('^parent')
 export class BoxComponent {
 
-    constructor($q) {
-        this.initData();
+    constructor() {
+
     }
 
-    initData() {
-
+    hasUrl() {
+        if (this.imageUrl && this.imageUrl.length > 0) {
+            return true;
+        }
+        return false;
     }
 }
 

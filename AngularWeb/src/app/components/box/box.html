@@ -8,11 +8,18 @@
             <hr>
         </div>
         <div class="col-md-6 box-grid-element" ng-class="{'col-md-push-6': BoxCtrl.isOdd == 'T'}">
-            <img class="img-responsive img-center img-max-height" ng-src={{BoxCtrl.imageSrc}} alt="">
+            <div ng-if="BoxCtrl.hasUrl()">
+                <a href="{{BoxCtrl.imageUrl}}" target="_blank">
+                    <img class="img-responsive img-center img-max-height" ng-src={{BoxCtrl.imageSrc}} alt="">
+                </a>
+            </div>
+            <div ng-if="!BoxCtrl.hasUrl()">
+                <img class="img-responsive img-center img-max-height" ng-src={{BoxCtrl.imageSrc}} alt="">
+            </div>
+
         </div>
         <div class="col-md-6 box-grid-element" ng-class="{'col-md-pull-6': BoxCtrl.isOdd == 'T'}">
             <ng-transclude></ng-transclude>
-
         </div>
         <div class="clearfix"></div>
     </div>
