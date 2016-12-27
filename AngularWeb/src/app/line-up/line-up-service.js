@@ -44,7 +44,7 @@ export class LineUpService {
                         startDate: new Date(2016, 2, 19, 12, 30),
                         endDate: new Date(2016, 2, 19, 18, 0),
                         options: {
-                            url: '#'
+                            url: 'index.home' // TODO: add href also to anchor tag! not sufficient for only ui-sref
                         }
                     },
                     {

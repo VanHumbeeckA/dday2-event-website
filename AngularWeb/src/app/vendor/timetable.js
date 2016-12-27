@@ -188,7 +188,7 @@ Timetable.Renderer = function(tt) {
                 aNode.title = event.name;
 
                 if (hasURL) {
-                    aNode.href = event.options.url;
+                    aNode.setAttribute('ui-sref', event.options.url);
                 }
                 if(hasDataAttributes){
                     for (var key in event.options.data) {
