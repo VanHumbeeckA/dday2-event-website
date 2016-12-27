@@ -8,9 +8,10 @@ import {Component, Inject, View} from "angular-decorators";
     ]
 })
 @View({ template: require('./event.html')})
+@Inject('moment')
 export class EventComponent {
 
-    constructor() {
+    constructor(moment) {
 
     }
 

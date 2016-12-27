@@ -5,11 +5,11 @@ import {Component, Inject, View} from "angular-decorators";
     controllerAs: 'LineUpCtrl'
 })
 @View({ template: require('./line-up.html')})
-@Inject('LineUpService')
+@Inject('LineUpService', 'FileSaver')
 export class LineUpComponent {
 
 
-    constructor(lineUpService) {
+    constructor(lineUpService, FileSaver) {
         this.lineUpService = lineUpService;
         this.initData();
     }

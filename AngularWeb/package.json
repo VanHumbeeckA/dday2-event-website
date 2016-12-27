@@ -20,9 +20,13 @@
   },
   "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
   "dependencies": {
+    "addtocalendar": "^1.5.3",
     "angular": "^1.6.1",
+    "angular-addtocalendar": "^1.2.2",
     "angular-animate": "^1.6.1",
     "angular-decorators": "^1.2.0",
+    "angular-file-saver": "^1.1.2",
+    "angular-moment": "^1.0.1",
     "angular-sanitize": "^1.6.1",
     "angular-touch": "^1.6.1",
     "angular-ui-bootstrap": "^2.3.1",
@@ -30,6 +34,7 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
     "lodash": "^4.17.3",
+    "moment": "^2.17.1",
     "reflect-metadata": "^0.1.9",
     "rxjs": "^5.0.2",
     "zone.js": "^0.7.4"
