@@ -1,3 +1,6 @@
+//// IE polyfill
+import "babel-polyfill";
+
 //// vendor JS files
 window.jQuery = window.$ = require('../../node_modules/jquery/dist/jquery.min');
 window.moment = require('moment');
