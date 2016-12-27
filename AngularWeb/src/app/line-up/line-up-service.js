@@ -10,15 +10,15 @@ export class LineUpService {
     getLineUp() {
         return {
             saturday: {
-                locations: ['Hoofdpodium'],
+                locations: ['Podium'],
                 events: [
                     {
                         name: 'Drumparty',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 18, 18, 30),
                         endDate: new Date(2016, 2, 18, 23, 0),
                         options: {
-                            class: 'event-hoofdpodium',
+                            class: 'event-podium',
                             data: {
                                 text: ''
                             }
@@ -26,17 +26,17 @@ export class LineUpService {
                     },
                     {
                         name: 'After-Drumparty',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 18, 23, 0),
                         endDate: new Date(2016, 2, 19, 23, 59),
                         options: {
-                            class: 'event-hoofdpodium'
+                            class: 'event-podium'
                         }
                     }
                 ]
             },
             sunday: {
-                locations: ['Hoofdpodium', 'Roland stand', 'Zaal 1', 'Zaal 2', 'Zaal 3', 'Zaal 4'],
+                locations: ['Podium', 'Roland stand', 'Zaal 1', 'Zaal 2', 'Zaal 3', 'Zaal 4'],
                 events: [
                     {
                         name: 'Roland stand',
@@ -86,38 +86,38 @@ export class LineUpService {
                     },
                     {
                         name: 'Clinic: Jordi Geuens',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 19, 13, 0),
                         endDate: new Date(2016, 2, 19, 14, 0),
                         options: {
-                            class: 'event-hoofdpodium'
+                            class: 'event-podium'
                         }
                     },
                     {
                         name: 'Herman Cambré & Stef Cambré | Drumbattle',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 19, 14, 30),
                         endDate: new Date(2016, 2, 19, 15, 30),
                         options: {
-                            class: 'event-hoofdpodium'
+                            class: 'event-podium'
                         }
                     },
                     {
                         name: 'Roland Push Your Drumming 3: Michael Schack',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 19, 16, 0),
                         endDate: new Date(2016, 2, 19, 17, 30),
                         options: {
-                            class: 'event-hoofdpodium'
+                            class: 'event-podium'
                         }
                     },
                     {
                         name: 'Slotconcert',
-                        location: 'Hoofdpodium',
+                        location: 'Podium',
                         startDate: new Date(2016, 2, 19, 18, 30),
                         endDate: new Date(2016, 2, 19, 22, 0),
                         options: {
-                            class: 'event-hoofdpodium'
+                            class: 'event-podium'
                         }
                     },
                 ]

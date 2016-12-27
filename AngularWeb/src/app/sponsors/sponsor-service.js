@@ -12,7 +12,7 @@ export class SponsorService {
             {
                 name: "Adams Musical Instruments",
                 url: "http://www.adams-music.be/",
-                image: "/img/sponsors/sponsor_hoofd_adams.png",
+                image: "/img/sponsors/sponsor_hoofd_adams.jpg",
                 type: 500
             },{
                 name: "Vriends, centrale verwarming & sanitair",
