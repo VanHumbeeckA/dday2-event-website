@@ -2,36 +2,42 @@
 
     <title-box title="Zaterdag 18 februari 2017">
         <div class="container-fluid">
-            <uib-tabset type="">
-                <uib-tab heading="Tijdslijn" classes="dd-btn-pills">
-                    <time-table identifier="timetable-saturday" min-hour="18" max-hour="23" dday-events="LineUpCtrl.saturday.events" locations="LineUpCtrl.saturday.locations">
-                        <div class="timetable timetable-saturday"></div>
-                    </time-table>
-                </uib-tab>
-                <uib-tab heading="Lijst" classes="dd-btn-pills">
-                    <div class="row">
-                        <event event="ev" ng-repeat="ev in LineUpCtrl.saturday.events"></event>
-                    </div>
-
-                </uib-tab>
-            </uib-tabset>
+            <div class="row mar20b">
+                <event event="ev" ng-repeat="ev in LineUpCtrl.saturday.events"></event>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Meer info volgt later &mldr;</p>
+                </div>
+            </div>
         </div>
     </title-box>
 
     <title-box title="Zondag 19 februari 2017">
         <div class="container-fluid">
-            <uib-tabset type="">
-                <uib-tab heading="Tijdslijn" classes="dd-btn-pills">
+            <uib-tabset class="mar20b">
+                <uib-tab classes="dd-btn-pills">
+                    <uib-tab-heading>
+                        Toon als <strong class="text-uppercase">tijdslijn</strong>
+                    </uib-tab-heading>
                     <time-table identifier="timetable-sunday" min-hour="12" max-hour="23" dday-events="LineUpCtrl.sunday.events" locations="LineUpCtrl.sunday.locations">
                         <div class="timetable timetable-sunday"></div>
                     </time-table>
                 </uib-tab>
-                <uib-tab heading="Lijst" classes="dd-btn-pills">
+                <uib-tab classes="dd-btn-pills">
+                    <uib-tab-heading>
+                        Toon als <strong class="text-uppercase">lijst</strong>
+                    </uib-tab-heading>
                     <div ng-repeat="ev in LineUpCtrl.sunday.events" >
                         <event event="ev"></event>
                     </div>
                 </uib-tab>
             </uib-tabset>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Meer info volgt later &mldr;</p>
+                </div>
+            </div>
         </div>
     </title-box>
 </div>
