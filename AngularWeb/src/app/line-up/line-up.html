@@ -28,8 +28,8 @@
                     <uib-tab-heading>
                         Toon als <strong class="text-uppercase">lijst</strong>
                     </uib-tab-heading>
-                    <div ng-repeat="ev in LineUpCtrl.sunday.events" >
-                        <event event="ev"></event>
+                    <div class="row">
+                        <event event="ev" ng-repeat="ev in LineUpCtrl.sunday.events"></event>
                     </div>
                 </uib-tab>
             </uib-tabset>
