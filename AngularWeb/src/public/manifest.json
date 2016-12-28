@@ -1,0 +1,15 @@
+{
+  "name": "D-Day 2.0",
+  "short_name": "D-Day 2",
+  "lang": "nl-BE",
+  "start_url": "index.html",
+  "display": "standalone",
+  "description": "Drum-Day 2.0 is een hoogdag voor alle drummers!",
+  "orientation": "portrait",
+  "background": "#fff",
+  "icons": [{
+    "src": "img/icon/favicon_background.png",
+    "sizes": "36x36 48x48 72x72 96x96 128x128",
+    "type": "image/png"
+  }]
+}
