@@ -2,7 +2,7 @@ import {Component, Inject, View} from "angular-decorators";
 
 @Component({
     selector: 'my-footer',
-    controllerAs: 'footerCtrl'
+    controllerAs: 'FooterCtrl'
 })
 @View({ template: require('./footer.html')})
 @Inject('$q')

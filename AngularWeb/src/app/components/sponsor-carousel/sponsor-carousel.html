@@ -1,0 +1,14 @@
+<div class="carousel-frame">
+
+        <div uib-carousel interval="SpCarCtrl.carouselTimer" no-wrap="SpCarCtrl.noWrapSlides" active="active">
+            <div uib-slide class="img-carousel-container" ng-repeat="slide in SpCarCtrl.sponsors track by $index" index="$index">
+                <span class="img-helper"></span>
+                <div class="inner-img-container">
+                    <img ng-src="{{slide.image}}" class="img-responsive img-center">
+                </div>
+
+            </div>
+        </div>
+
+</div>
+
