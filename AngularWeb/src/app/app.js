@@ -51,11 +51,12 @@ import {TimeTableComponent} from './components/timetable/timetable-component';
 import {SponsorService} from './sponsors/sponsor-service';
 import {LineUpService} from './line-up/line-up-service';
 import {EventComponent} from './components/event/event-component'
+import {BoxColumnComponent} from './components/box-column/box-column-component';
 //import {AddToCalComponent} from './components/addtocalendar/addtocalendar-component';
 
 const MODULE_NAME = 'ddayApp';
 
-Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch','angularMoment','ngFileSaver', 'ui.router', carousel, tabs])
+Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'angularMoment', 'ngFileSaver', 'ui.router', carousel, tabs])
     .config(routing)
     .add(NavigationComponent)
     .add(FooterComponent)
@@ -69,6 +70,7 @@ Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch','angularMoment','ngFil
     .add(SponsorService)
     .add(LineUpService)
     .add(EventComponent)
+    .add(BoxColumnComponent)
     // .add(AddToCalComponent)
     .run((amMoment) => {
         amMoment.changeLocale('nl-be');

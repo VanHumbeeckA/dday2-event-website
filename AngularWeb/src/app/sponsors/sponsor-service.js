@@ -100,6 +100,24 @@ export class SponsorService {
                 url: "mailto:dday19022017@gmail.com",
                 image: "/img/sponsors/placeholder.jpg",
                 type: 0
+            },
+            {
+                name: "Toro architecten",
+                url: "http://www.toroarchitecten.be/",
+                image: "/img/sponsors/sponsor_100_toro.png",
+                type: 100
+            },
+            {
+                nome: "KBC Raf Mellaerts",
+                url: "https://www.kbcagent.be/verzekeringskantoormellaerts/where",
+                image: "/img/sponsors/sponsor_250_kbc.jpg",
+                type: 250
+            },
+            {
+                name: "Nationale loterij",
+                url: "https://www.nationale-loterij.be/nl/onze-spelen/joker-plus",
+                image: "/img/sponsors/sponsor_500_joker.JPG",
+                type: 500
             }
         ]
     }
