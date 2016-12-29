@@ -116,8 +116,21 @@ module.exports = function makeWebpackConfig () {
       // Rename the file using the asset hash
       // Pass along the updated reference to your code
       // You can add here any file extension you want to get copied to your output
-      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot)$/,
       loader: 'file'
+
+    },
+    //     {
+    //     test: /\.()$/,
+    //     loader: 'file',
+    //     loaders: [
+    //         'file?hash=sha512&digest=hex&name[hash].[ext]',
+    //         'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+    //     ]
+    // }
+    {
+      test: /\.(ttf|otf)$/,
+      loader: 'url?limit=100000'
     }, {
       // HTML LOADER
       // Reference: https://github.com/webpack/raw-loader

@@ -28,11 +28,11 @@ import tabs from 'angular-ui-bootstrap/src/tabs'
 import {routing} from './app.routing';
 
 //// CSS
-import '../style/app.css';
 import '../style/bootstrap.min.css';
 import '../style/business-casual.css';
 
 // SASS
+import '../style/sass/general/fonts.scss';
 import '../style/sass/main.scss';
 
 //// modules

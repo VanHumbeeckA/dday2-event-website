@@ -1,8 +1,57 @@
+/* styles in src/style directory are applied to the whole page */
+body {
+
+}
+
+a {
+  color: #03A9F4;
+}
+
+main {
+  padding: 1em;
+  // font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+// FONTS
+
+.dd-font {
+  font-family: "BebasNeue Bold", "Trebuchet MS","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+}
+
+// BOOSTRAP COL HEIGHT FIX
+@media only screen and (min-width : 767px) {
+  .col-height-fixed  [class*='col-'] {
+    min-height: 180px; // dirty fix: hardcoded height
+  }
+}
+
+
+// OTHER
+
+
+
+.dark-bg {
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+.container-tb-margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .no-padding {
   padding: 0 !important;
 }
 .mar20b {
   margin-bottom: 20px;
+}
+.mar30b {
+  margin-bottom: 30px;
 }
 .mar20t {
   margin-top: 20px;

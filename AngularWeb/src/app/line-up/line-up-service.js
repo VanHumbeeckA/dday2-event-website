@@ -28,7 +28,7 @@ export class LineUpService {
                         name: 'After-Drumparty',
                         location: 'Podium',
                         startDate: new Date(2016, 2, 18, 23, 0),
-                        endDate: new Date(2016, 2, 19, 23, 59),
+                        endDate: new Date(2016, 2, 19, 3, 0),
                         options: {
                             class: 'event-podium'
                         }
