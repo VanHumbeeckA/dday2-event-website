@@ -34,12 +34,13 @@ import {routing} from './app.routing';
 import '../style/bootstrap.min.css';
 import '../style/business-casual.css';
 
-// SASS
+//// SASS
 import '../style/sass/general/fonts.scss';
 import '../style/sass/main.scss';
 
-//// modules
-// import * as TimeTableModule from './components/timetable.js/timetable-provider';
+//// Service worker
+// import {SwBootstrap} from './app.sw-bootstrap';
+// SwBootstrap();
 
 //// components
 import {NavigationComponent} from './components/common/navigation-component';
