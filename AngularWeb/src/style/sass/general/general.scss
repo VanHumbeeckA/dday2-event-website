@@ -22,10 +22,13 @@ main {
   font-weight: normal;
 }
 
-// BOOSTRAP COL HEIGHT FIX
+// BOOTSTRAP COL HEIGHT FIX
 @media only screen and (min-width : 767px) {
   .col-height-fixed  [class*='col-'] {
     min-height: 180px; // dirty fix: hardcoded height
+  }
+  .col-height-fixed-praktisch [class*='col-'] {
+    min-height: 130px; // dirty fix: hardcoded height
   }
 }
 

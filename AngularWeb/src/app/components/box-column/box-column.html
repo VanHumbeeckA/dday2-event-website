@@ -1,7 +1,7 @@
 
 <div class="col-md-6 col-sm-12 mar30b">
     <h3>{{BoxColumnCtrl.title}}<br>
-        <small><span class="glyphicon glyphicon-time"></span> {{BoxColumnCtrl.date}}</small>
+        <small ng-if="BoxColumnCtrl.hasDate()"><span class="glyphicon glyphicon-time"></span> {{BoxColumnCtrl.date}}</small>
     </h3>
     <ng-transclude></ng-transclude>
 </div>

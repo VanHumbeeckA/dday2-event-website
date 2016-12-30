@@ -118,6 +118,12 @@ export class SponsorService {
                 url: "https://www.nationale-loterij.be/nl/onze-spelen/joker-plus",
                 image: "/img/sponsors/sponsor_500_joker.JPG",
                 type: 500
+            },
+            {
+                name: "Body Centrum",
+                url: "http://www.bodycentrum.be/",
+                image: "/img/sponsors/sponsor_200_bodycentrum.jpg",
+                type: 200
             }
         ]
     }

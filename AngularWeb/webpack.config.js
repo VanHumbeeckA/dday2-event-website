@@ -108,7 +108,7 @@ module.exports = function makeWebpackConfig () {
         // SASS LOADER (avh)
         // Reference: https://github.com/jtangelder/sass-loader
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!sass-loader')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!resolve-url-loader!sass-loader?sourceMap')
     }, {
       // ASSET LOADER
       // Reference: https://github.com/webpack/file-loader
@@ -116,18 +116,13 @@ module.exports = function makeWebpackConfig () {
       // Rename the file using the asset hash
       // Pass along the updated reference to your code
       // You can add here any file extension you want to get copied to your output
-      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot)$/,
+      test: /\.(woff|woff2|eot|svg|png|jpg|jpeg|gif)$/,
       loader: 'file'
-
     },
-    //     {
+    //   {
     //     test: /\.()$/,
-    //     loader: 'file',
-    //     loaders: [
-    //         'file?hash=sha512&digest=hex&name[hash].[ext]',
-    //         'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-    //     ]
-    // }
+    //     loader:  'file!img?minimize'
+    // },
     {
       test: /\.(ttf|otf)$/,
       loader: 'url?limit=100000'

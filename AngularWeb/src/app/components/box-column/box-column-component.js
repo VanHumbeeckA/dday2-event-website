@@ -16,5 +16,12 @@ export class BoxColumnComponent {
     constructor() {
 
     }
+
+    hasDate() {
+        if (this.date && this.date.toString().length > 0) {
+            return true;
+        }
+        return false;
+    }
 }
 
