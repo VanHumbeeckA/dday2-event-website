@@ -4,6 +4,7 @@ import "babel-polyfill";
 //// vendor JS files
 window.jQuery = window.$ = require('../../node_modules/jquery/dist/jquery.min');
 window.moment = require('moment');
+window.FastClick = require('../../node_modules/fastclick/lib/fastclick');
 require('../../node_modules/bootstrap/dist/js/bootstrap.min');
 //require('../../node_modules/addtocalendar/addtocalendar');
 
@@ -18,11 +19,13 @@ import 'angular-animate';
 import 'angular-sanitize';
 import 'angular-touch';
 import 'angular-file-saver';
-import 'moment';
-import 'moment/locale/nl-be';
-import 'angular-moment';
+
 import carousel from 'angular-ui-bootstrap/src/carousel';
 import tabs from 'angular-ui-bootstrap/src/tabs'
+// import 'moment';
+// import 'moment/locale/nl-be';
+// import 'angular-moment';
+
 
 //// local config
 import {routing} from './app.routing';
@@ -57,7 +60,7 @@ import {SponsorCarouselComponent} from './components/sponsor-carousel/sponsor-ca
 
 const MODULE_NAME = 'ddayApp';
 
-Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'angularMoment', 'ngFileSaver', 'ui.router', carousel, tabs])
+Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'ngFileSaver', 'ui.router', carousel, tabs])
     .config(routing)
     .add(NavigationComponent)
     .add(FooterComponent)
@@ -74,8 +77,9 @@ Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'angularMoment', 'ngF
     .add(BoxColumnComponent)
     .add(SponsorCarouselComponent)
     // .add(AddToCalComponent)
-    .run((amMoment) => {
-        amMoment.changeLocale('nl-be');
+    .run(() => {
+        //amMoment.changeLocale('nl-be');
+        FastClick.attach(document.body);
     })
 ;
 

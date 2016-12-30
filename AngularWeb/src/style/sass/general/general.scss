@@ -32,9 +32,12 @@ main {
   }
 }
 
-
 // OTHER
-
+@media only screen and (min-width: 767px) {
+  .no-padding-large {
+    padding: 0 !important;
+  }
+}
 
 
 .dark-bg {

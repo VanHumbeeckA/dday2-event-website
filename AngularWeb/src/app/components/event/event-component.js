@@ -8,15 +8,13 @@ import {Component, Inject, View} from "angular-decorators";
     ]
 })
 @View({ template: require('./event.html')})
-@Inject('moment')
 export class EventComponent {
 
-    constructor(moment) {
+    constructor() {
 
     }
 
     initData() {
-
         this.saturday = data.saturday;
         this.sunday = data.sunday;
     }
