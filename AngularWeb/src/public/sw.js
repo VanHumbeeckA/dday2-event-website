@@ -3,18 +3,50 @@ importScripts('/scripts/cache-polyfill.js');
 
 var CACHE_VERSION = '1';
 var CURRENT_CACHES = {
-    images: 'image-v'+CACHE_VERSION
+    static: 'static-v'+CACHE_VERSION
 };
 
 const expectedCaches = [CACHE_VERSION];
 
 self.addEventListener('install', function(event) {
     console.log('[SW] install');
-    // self.skipWaiting();
+    self.skipWaiting();
 
     event.waitUntil(
-        caches.open(CURRENT_CACHES['images']).then(function(cache) {
-            return cache.addAll(['/img/sponsors/placeholder.jpg']);
+        caches.open(CURRENT_CACHES['static']).then(function(cache) {
+            return cache.addAll([
+                '/img/',
+                '/img/sponsors/',
+                '/img/sponsors/placeholder.jpg',
+                '/img/sponsors/sponsor_50_cola.png',
+                '/img/sponsors/sponsor_50_depotter.jpg',
+                '/img/sponsors/sponsor_100_frituur_sportcentrum.JPG',
+                '/img/sponsors/sponsor_100_rokken.jpeg',
+                '/img/sponsors/sponsor_100_terlandinvest.jpg',
+                '/img/sponsors/sponsor_100_toro.png',
+                '/img/sponsors/sponsor_100_traiteurculinesse.JPG',
+                '/img/sponsors/sponsor_200_bodycentrum.jpg',
+                '/img/sponsors/sponsor_200_escent.png',
+                '/img/sponsors/sponsor_200_forever.jpg',
+                '/img/sponsors/sponsor_200_roggen.png',
+                '/img/sponsors/sponsor_250_kbc.jpg',
+                '/img/sponsors/sponsor_500_joker.JPG',
+                '/img/sponsors/sponsor_hoofd_adams.jpg',
+                '/img/sponsors/sponsor_hoofd_AE.png',
+                '/img/sponsors/sponsor_hoofd_ford.jpg',
+                '/img/sponsors/sponsor_hoofd_handson.png',
+                '/img/sponsors/sponsor_hoofd_roland.png',
+                '/img/sponsors/sponsor_hoofd_vriends.jpg',
+                '/img/sponsors/sponsor_livingstone.JPG',
+                '/img/background/',
+                '/img/background/escheresque_ste.png',
+                '/img/background/escheresque_ste_@2X.png',
+                '/img/filler/',
+                '/img/filler/steunkaart_specimen.JPG',
+                '/img/muziekschool/',
+                '/img/muziekschool/animal.jpg',
+                '/img/muziekschool/devonk.png'
+            ]); // TODO: explicitly name files?
         }).catch(function(err) {
             console.error(err);
         })
@@ -47,18 +79,22 @@ self.addEventListener('activate', function(event){
 });
 
 self.addEventListener('fetch', function(event){
-    console.log('Handling fetch event for', event.request.url);
+    // console.log('Handling fetch event for', event.request.url);
+    var url = new URL(event.request.url);
 
     // We only want to call event.respondWith() if this is a GET request for an HTML document.
     // if (event.request.method === 'GET' &&
     //     event.request.headers.get('accept').indexOf('text/html') !== -1) {
 
     event.respondWith(
-        caches.open(CURRENT_CACHES['images']).then(function(cache) {
+        caches.open(CURRENT_CACHES['static']).then(function(cache) {
             return caches.match(event.request).then(function(response) {
                 if (response) {
-                    console.log('Found response in chache: ', response);
+                    // console.log('Found response in cache: ', response);
                     return response;
+                } else {
+                    // console.log('NOT Found in cache: ', url);
+                    return fetch(event.request);
                 }
             }).catch(function(error) {
                 console.error('Error in fetch handler: ', error);

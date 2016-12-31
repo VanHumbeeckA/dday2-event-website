@@ -7,6 +7,17 @@ export class SponsorService {
 
     }
 
+    getSupporters() {
+        return [
+            {
+                name: "Apotheek Abels Kristien",
+                text: "Egenhoven",
+                type: 50
+            }
+        ]
+    }
+
+
     getSponsors() {
         return [
             {

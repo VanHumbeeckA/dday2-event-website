@@ -1,6 +1,10 @@
 //// IE polyfill
 import "babel-polyfill";
 
+//// Service worker
+import {SwBootstrap} from './app.sw-bootstrap';
+SwBootstrap();
+
 //// vendor JS files
 window.jQuery = window.$ = require('../../node_modules/jquery/dist/jquery.min');
 window.moment = require('moment');
@@ -37,10 +41,6 @@ import '../style/business-casual.css';
 //// SASS
 import '../style/sass/general/fonts.scss';
 import '../style/sass/main.scss';
-
-//// Service worker
-// import {SwBootstrap} from './app.sw-bootstrap';
-// SwBootstrap();
 
 //// components
 import {NavigationComponent} from './components/common/navigation-component';

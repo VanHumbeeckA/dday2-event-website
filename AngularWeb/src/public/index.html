@@ -12,7 +12,6 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,9 +20,38 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <base href="/">
+
+
+  <style>
+    body {
+      background: url('/img/background/escheresque_ste.png') repeat top left;
+      background-attachment: fixed;
+      background-size: 46px 29px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      body {
+        background: url('/img/background/escheresque_ste_@2X.png') repeat top left;
+        background-attachment: fixed;
+        background-size: 46px 29px;
+      }
+    }
+  </style>
+
+    <base href="/">
+
 </head>
 <body>
-  <div ui-view></div>
+  <div ui-view>
+    <div style='color: white; font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
+      <strong style="font-weight: bold; text-align: center;">Loading D-Day &mldr;</strong>
+    </div>
+  </div>
 </body>
 </html>

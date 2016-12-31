@@ -12,6 +12,7 @@ export class AboutComponent {
     constructor($q, SponsorService) {
         this.sponsorService = SponsorService;
         this.sponsors = orderBy(this.sponsorService.getSponsors(), (s) => s.type, "desc");
+        this.supporters = this.sponsorService.getSupporters();
     }
 
     initData() {
