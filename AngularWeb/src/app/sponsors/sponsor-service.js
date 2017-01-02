@@ -134,7 +134,18 @@ export class SponsorService {
                 name: "Body Centrum",
                 url: "http://www.bodycentrum.be/",
                 image: "/img/sponsors/sponsor_200_bodycentrum.jpg",
-                type: 200
+                type: 230
+            },
+            {
+                name: "Sioen",
+                url: "http://www.sioenfurniture.be/",
+                image: "/img/sponsors/sponsor_50_sioen.jpg",
+                type: 50
+            }, {
+                name: "Dierenarts An Havet",
+                url: "http://www.dapanhavet.be/",
+                image: "/img/sponsors/sponsor_50_AnHavetDierenarts.jpg",
+                type: 50
             }
         ]
     }

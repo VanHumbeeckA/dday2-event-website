@@ -1,7 +1,7 @@
 // SERVICE WORKER
 importScripts('/scripts/cache-polyfill.js');
 
-var CACHE_VERSION = '1';
+var CACHE_VERSION = '2';
 var CURRENT_CACHES = {
     static: 'static-v'+CACHE_VERSION
 };
@@ -15,11 +15,11 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(CURRENT_CACHES['static']).then(function(cache) {
             return cache.addAll([
-                '/img/',
-                '/img/sponsors/',
                 '/img/sponsors/placeholder.jpg',
                 '/img/sponsors/sponsor_50_cola.png',
                 '/img/sponsors/sponsor_50_depotter.jpg',
+                '/img/sponsors/sponsor_50_AnHavetDierenarts.jpg',
+                '/img/sponsors/sponsor_50_sioen.jpg',
                 '/img/sponsors/sponsor_100_frituur_sportcentrum.JPG',
                 '/img/sponsors/sponsor_100_rokken.jpeg',
                 '/img/sponsors/sponsor_100_terlandinvest.jpg',
@@ -38,12 +38,9 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_hoofd_roland.png',
                 '/img/sponsors/sponsor_hoofd_vriends.jpg',
                 '/img/sponsors/sponsor_livingstone.JPG',
-                '/img/background/',
                 '/img/background/escheresque_ste.png',
                 '/img/background/escheresque_ste_@2X.png',
-                '/img/filler/',
                 '/img/filler/steunkaart_specimen.JPG',
-                '/img/muziekschool/',
                 '/img/muziekschool/animal.jpg',
                 '/img/muziekschool/devonk.png'
             ]); // TODO: explicitly name files?
