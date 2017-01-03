@@ -144,7 +144,17 @@ export class SponsorService {
             }, {
                 name: "Dierenarts An Havet",
                 url: "http://www.dapanhavet.be/",
-                image: "/img/sponsors/sponsor_50_AnHavetDierenarts.jpg",
+                image: "/img/sponsors/sponsor_50_dierenarts.jpg",
+                type: 50
+            }, {
+                name: "Chan'Talk'",
+                url: "http://chantalk.be/",
+                image: "/img/sponsors/sponsor_100_chantalk.jpg",
+                type: 100
+            }, {
+                name: "Crescendo Music",
+                url: "https://www.crescendo-music.com/",
+                image: "/img/sponsors/sponsor_50_crescendomusic.JPG",
                 type: 50
             }
         ]

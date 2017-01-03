@@ -42,6 +42,26 @@
         background-size: 46px 29px;
       }
     }
+
+    .init-loader {
+      animation-name: spin;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    @-moz-keyframes spin {
+      from { -moz-transform: rotate(0deg); }
+      to { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+      from {transform:rotate(0deg);}
+      to {transform:rotate(360deg);}
+    }
   </style>
 
     <base href="/">
@@ -59,8 +79,8 @@
 </head>
 <body>
   <div ui-view>
-    <div style='color: white; font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
-      <strong style="font-weight: bold; text-align: center;">Loading D-Day &mldr;</strong>
+    <div style='text-align: center; color: white; width: 100%; height: 100vh; font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
+        <h1><span style="line-height: 100vh;" class="glyphicon glyphicon-refresh init-loader"></span></h1>
     </div>
   </div>
 </body>
