@@ -7,9 +7,11 @@
   "description": "Drum-Day 2.0 is een hoogdag voor alle drummers!",
   "orientation": "portrait",
   "background": "#fff",
-  "icons": [{
-    "src": "img/icon/favicon_background.png",
-    "sizes": "36x36 48x48 72x72 96x96 128x128 144x144",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "img/icon/favicon_background.png",
+      "sizes": "36x36 48x48 72x72 96x96 128x128 144x144",
+      "type": "image/png"
+    }
+  ]
 }

@@ -15,7 +15,7 @@ export class SponsorCarouselComponent {
     constructor(SponsorService) {
         this.sponsorService = SponsorService;
         this.noWrapSlides = false;
-        this.carouselTimer = 4000;
+        this.carouselTimer = 3500;
         let allSponsors = orderBy(this.sponsorService.getSponsors(), (s) => s.type, "desc");
         this.sponsors = filter(allSponsors, (s) => !s.sympatisant);
     }
