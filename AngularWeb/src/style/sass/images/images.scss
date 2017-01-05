@@ -8,12 +8,10 @@
 .img-max-height {
   max-height: 300px;
 }
+
 .img-container-dd {
-  height: 300px; /* equals max image height */
   // border: 1px solid red;
   white-space: nowrap;
-
-
   text-align: center;
   margin: 0.5em 0;
 
@@ -21,6 +19,12 @@
     //background: #3A6F9A;
     vertical-align: middle;
     max-height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-container-dd {
+    height: 300px; /* equals max image height */
   }
 }
 
