@@ -156,6 +156,16 @@ export class SponsorService {
                 url: "https://www.crescendo-music.com/",
                 image: "/img/sponsors/sponsor_50_crescendomusic.JPG",
                 type: 50
+            }, {
+                name: "Heating Center",
+                url: "https://www.heating.be/en",
+                image: "/img/sponsors/sponsor_100_heatingcenter.jpg",
+                type: 100
+            }, {
+                name: "Delhaize Sint-Joris-Weert",
+                url: "http://shop.delhaize.be/fr-be/storelocator/viewStoreDetail?poiName=10048646",
+                image: "/img/sponsors/sponsor_100_delhaize.jpg",
+                type: 100
             }
         ]
     }
