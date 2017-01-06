@@ -1,99 +1,136 @@
 <!doctype html>
 <html ng-app="ddayApp" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>D-Day 2.0</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-  <link rel="manifest" href="manifest.json">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="D-Day 2.0 ">
-  <meta name="author" content="Andries Van Humbeeck">
-  <meta description="D-Day 2.0 is een hoogdag voor drummers! Kom kijken naar drum-battles van topdrummers of neem zelf deel aan een van de vele workshops en initiaties.">
+    <meta charset="UTF-8">
+    <title>D-Day 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="D-Day 2.0">
+    <meta name="author" content="Andries Van Humbeeck">
+    <meta description="D-Day 2.0 is een hoogdag voor drummers! Kom kijken naar drum-battles van topdrummers of neem zelf deel aan een van de vele workshops en initiaties.">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-
-
-  <style>
-    body {
-      background: url('/img/background/escheresque_ste.png') repeat top left;
-      background-attachment: fixed;
-      background-size: 46px 29px;
-    }
-
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-      body {
-        background: url('/img/background/escheresque_ste_@2X.png') repeat top left;
-        background-attachment: fixed;
-        background-size: 46px 29px;
-      }
-    }
-
-    .init-loader {
-      -webkit-animation-name: spin;
-      -webkit-animation-duration: 2000ms;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-name: spin;
-      -moz-animation-duration: 2000ms;
-      -moz-animation-iteration-count: infinite;
-      -moz-animation-timing-function: linear;
-      -ms-animation-name: spin;
-      -ms-animation-duration: 2000ms;
-      -ms-animation-iteration-count: infinite;
-      -ms-animation-timing-function: linear;
-      animation-name: spin;
-      animation-duration: 2000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-
-    @-moz-keyframes spin {
-      from { -moz-transform: rotate(0deg); }
-      to { -moz-transform: rotate(360deg); }
-    }
-    @-webkit-keyframes spin {
-      from { -webkit-transform: rotate(0deg); }
-      to { -webkit-transform: rotate(360deg); }
-    }
-    @keyframes spin {
-      from {transform:rotate(0deg);}
-      to {transform:rotate(360deg);}
-    }
-  </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
 
     <base href="/">
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <!-- prd: 36ad531a-9ff6-44d1-8553-90956e68849e -->
+    <!-- tst: c99bebf8-7df4-4ced-baa9-d463da4f3ba4 -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "[OSAppId]",
+            autoRegister: false,
+            persistNotification: false,
+            allowLocalhostAsSecureOrigin: true,
+            notifyButton: {
+                enable: true /* Set to false to hide */
+            },
+            safari_web_id: "[OSAppIdSafari]"
+        }]);
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-3155897-4', 'auto');
         ga('send', 'pageview');
-
     </script>
+
+    <!-- STYLES -->
+    <style>
+        body {
+            background: url('/img/background/escheresque_ste.png') repeat top left;
+            background-attachment: fixed;
+            background-size: 46px 29px;
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
+            body {
+                background: url('/img/background/escheresque_ste_@2X.png') repeat top left;
+                background-attachment: fixed;
+                background-size: 46px 29px;
+            }
+        }
+
+        .init-loader {
+            -webkit-animation-name: spin;
+            -webkit-animation-duration: 2000ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: spin;
+            -moz-animation-duration: 2000ms;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+            -ms-animation-name: spin;
+            -ms-animation-duration: 2000ms;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-timing-function: linear;
+            animation-name: spin;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @-moz-keyframes spin {
+            from {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 
 </head>
 <body>
-  <div ui-view>
+<div ui-view>
     <div style='text-align: center; color: white; width: 100%; height: 100vh; font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
         <h1><span style="line-height: 100vh;" class="glyphicon glyphicon-refresh init-loader"></span></h1>
     </div>
-  </div>
+</div>
 </body>
 </html>
