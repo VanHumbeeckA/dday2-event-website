@@ -17,7 +17,7 @@ var settings = {
     },
     prd: {
         oneSignal: "36ad531a-9ff6-44d1-8553-90956e68849e",
-        oneSignalSafari: ""
+        oneSignalSafari: "web.onesignal.auto.2b9eaa60-5747-4249-a27c-f48aa9ddca65"
     }
 };
 

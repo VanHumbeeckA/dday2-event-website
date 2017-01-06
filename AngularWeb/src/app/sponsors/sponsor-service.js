@@ -10,7 +10,7 @@ export class SponsorService {
     getSupporters() {
         return [
             {
-                name: "Apotheek Abels Kristien",
+                name: "Abels Kristien",
                 text: "Egenhoven",
                 type: 50
             }
@@ -166,6 +166,11 @@ export class SponsorService {
                 url: "http://shop.delhaize.be/fr-be/storelocator/viewStoreDetail?poiName=10048646",
                 image: "/img/sponsors/sponsor_100_delhaize.jpg",
                 type: 100
+            }, {
+                name: "Gemeente Oud-Heverlee",
+                url: "https://www.oud-heverlee.be/",
+                image: "/img/sponsors/sponsor_hoofd_oudheverlee.jpg",
+                type: 500
             }
         ]
     }
