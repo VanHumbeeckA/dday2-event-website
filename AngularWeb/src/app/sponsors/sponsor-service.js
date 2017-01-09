@@ -10,7 +10,7 @@ export class SponsorService {
     getSupporters() {
         return [
             {
-                name: "Apotheek Abels Kristien",
+                name: "Abels Kristien",
                 text: "Egenhoven",
                 type: 50
             }

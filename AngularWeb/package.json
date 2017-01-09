@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Drum-Day 2.0 website",
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile --display-error-details",
+    "build-azure": "rimraf dist && webpack --bail --progress --profile --display-error-details",
+    "build-ftp": "rimraf dist && webpack --bail --progress --profile --display-error-details",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
@@ -77,6 +78,7 @@
     "resolve-url-loader": "^1.6.1",
     "rimraf": "^2.5.1",
     "sass-loader": "^4.1.1",
+    "string-replace-loader": "^1.0.5",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
