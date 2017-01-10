@@ -15,12 +15,20 @@ export class LineUpService {
                     {
                         name: 'Drumparty',
                         location: 'Podium',
-                        startDate: new Date(2016, 2, 18, 18, 30),
+                        startDate: new Date(2016, 2, 18, 18, 0),
                         endDate: new Date(2016, 2, 18, 23, 0),
                         options: {
                             class: 'event-podium',
                             data: {
-                                text: ''
+                                image: "/img/muziekschool/animal.jpg",
+                                abstract: "De Slagwerkklas van Academie De Vonk nodigt iedereen uit op de DRUMPARTY op zaterdag 18 februari 2017 vanaf 18.00u in de Roosenberg te Oud-Heverlee.",
+                                paragraphs: [
+                                    "18 februari 2017: de dertiende editie van de Drumparty. Iedereen van de slagwerkklas heeft weer een nummer (techno, pop, rock, metal... ) voorbereid om op onze Drumparty live te spelen. Al deze nummers worden dan door onze eigen dj’s (ook leerlingen van de slagwerkklas) aan elkaar geweven tot een heuse drumparty.",
+                                    "De muziek start om 18.00u, de optredens starten omstreeks 18.30u. En dan gaat het non-stop tot ongeveer 23.00u. Het geheel wordt afgesloten met een spetterende  After-Drumparty. Zoals op de andere Drumparty’s zullen er doorlopend drank en snacks te verkrijgen zijn. Ook de traditionele Happy Hour is weer van de partij. Al is het nog even gissen naar het precieze uur. Of onze onovertroffen “Samgria(na)” ook dit jaar weer te verkrijgen is…???",
+                                    "Een uurschema van de optredens (volgorde van de leerlingen) wordt later nog verspreid. Zo kan je zien wanneer uw favoriete drummer/drumster in actie treedt. Kom dus gerust eens binnenwandelen (inkom is natuurlijk gratis), breng gerust nog wat volk mee en maak er samen met ons een leuke Party van.",
+                                    "Wij hopen u dan te mogen begroeten,",
+                                    "De Slagwerkklas."
+                                ]
                             }
                         }
                     },
@@ -62,7 +70,10 @@ export class LineUpService {
                         endDate: new Date(2016, 2, 19, 18, 0),
                         options: {
                             data: {
-                                text: "Nataniel Melo (Terrakota, Clac) laat je kennismaken met de pracht van slaginstrumenten uit alle werelddelen. Conga, bata, surdo, talking drum, kalimba, mbira, balafon… En nog veel meer. Ontdek de oneindige klanken van de percussiewereld en probeer ze zelf uit"
+                                image: "/img/filler/workshops.jpg",
+                                paragraphs: [
+                                    "Nataniel Melo (Terrakota, Clac) laat je kennismaken met de pracht van slaginstrumenten uit alle werelddelen. Conga, bata, surdo, talking drum, kalimba, mbira, balafon… En nog veel meer. Ontdek de oneindige klanken van de percussiewereld en probeer ze zelf uit"
+                                ]
                             }
                         }
                     },
@@ -73,7 +84,10 @@ export class LineUpService {
                         endDate: new Date(2016, 2, 19, 18, 0),
                         options: {
                             data: {
-                                text: "Altijd al eens van dichtbij willen kennismaken met een drumstel? Dit is je kans. Onze oud-leerlingen (waaronder enkele professionele muzikanten) leren je de eerste stappen, dan is het aan jou om je uit te leven en de opwinding van het drummen te voelen. Speel je zelf al langer? Dan kunnen we jammen!"
+                                image: "/img/filler/drumkit.jpg",
+                                paragraphs: [
+                                    "Altijd al eens van dichtbij willen kennismaken met een drumstel? Dit is je kans. Onze oud-leerlingen (waaronder enkele professionele muzikanten) leren je de eerste stappen, dan is het aan jou om je uit te leven en de opwinding van het drummen te voelen. Speel je zelf al langer? Dan kunnen we jammen!"
+                                ]
                             }
                         }
                     },

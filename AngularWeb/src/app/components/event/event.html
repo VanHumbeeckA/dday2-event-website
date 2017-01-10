@@ -1,8 +1,13 @@
 
-<div class="col-md-6">
-    <div class="dd-event-tab">
-        <h4>{{EventCtrl.event.name}}</h4>
-        <p>{{EventCtrl.event.startDate|date : 'HH:mm'}} - {{EventCtrl.event.endDate|date: 'HH:mm'}}</p>
-        <p>{{EventCtrl.event.text}}</p>
+<div class="col-md-6" ng-class="{'col-md-offset-3':EventCtrl.putCenter == 'T'}">
+    <div ng-click="EventCtrl.goToEvent()" class="dd-event-tab" ng-class="{'dd-clickable':EventCtrl.isClickable()}">
+        <h4>
+            {{EventCtrl.event.name}}
+            <span ng-if="EventCtrl.isClickable()" class="pull-right glyphicon glyphicon-info-sign"></span>
+        </h4>
+        <div class="clearfix"></div>
+        <p>
+            {{EventCtrl.event.startDate|date : 'HH:mm'}} - {{EventCtrl.event.endDate|date: 'HH:mm'}}
+        </p>
     </div>
 </div>

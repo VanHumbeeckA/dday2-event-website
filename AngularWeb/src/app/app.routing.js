@@ -25,6 +25,13 @@ export const routing = ($stateProvider, $urlRouterProvider) => {
                 title: 'Line-Up'
             }
         })
+        .state("index.line-up-detail", {
+            url: "/line-up/detail/:eventName",
+            template: '<event-detail event="event"></event-detail>',
+            params: {
+                event: null
+            }
+        })
         .state("index.about", {
             url: "/about",
             template: `<about></about>`,

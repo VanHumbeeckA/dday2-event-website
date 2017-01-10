@@ -57,6 +57,7 @@ import {LineUpService} from './line-up/line-up-service';
 import {EventComponent} from './components/event/event-component'
 import {BoxColumnComponent} from './components/box-column/box-column-component';
 import {SponsorCarouselComponent} from './components/sponsor-carousel/sponsor-carousel';
+import {EventDetailComponent} from './components/event-detail/event-detail-component';
 //import {AddToCalComponent} from './components/addtocalendar/addtocalendar-component';
 
 const MODULE_NAME = 'ddayApp';
@@ -77,6 +78,7 @@ Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'ngFileSaver', 'ui.ro
     .add(EventComponent)
     .add(BoxColumnComponent)
     .add(SponsorCarouselComponent)
+    .add(EventDetailComponent)
     // .add(AddToCalComponent)
     .run(() => {
         //amMoment.changeLocale('nl-be');

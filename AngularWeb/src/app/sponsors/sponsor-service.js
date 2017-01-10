@@ -171,6 +171,11 @@ export class SponsorService {
                 url: "https://www.oud-heverlee.be/",
                 image: "/img/sponsors/sponsor_hoofd_oudheverlee.jpg",
                 type: 500
+            }, {
+                name: "Krantenwinkel Daisy",
+                url: "http://www.handelsgids.be/oud-heverlee/dagbladhandel-daisy/",
+                image: "/img/sponsors/sponsor_50_daisy.JPG",
+                type: 50
             }
         ]
     }
