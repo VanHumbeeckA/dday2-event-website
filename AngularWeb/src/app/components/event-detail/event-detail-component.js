@@ -5,12 +5,17 @@ import {Component, Require, Inject, View} from "angular-decorators";
     controllerAs: 'EventDetailCtrl'
 })
 @View({ template: require('./event-detail.html')})
-@Inject('$stateParams')
+@Inject('$stateParams', 'LineUpService')
 export class EventDetailComponent {
 
-    constructor($stateParams) {
-        this.event = $stateParams.event;
+    constructor($stateParams, LineUpService) {
         this.eventName = $stateParams.eventName;
+        this.event = $stateParams.event;
+        this.lineUpService = LineUpService;
+
+        if (this.event == null) {
+            this.event = LineUpService.findEvent(this.eventName);
+        }
     }
 
 }

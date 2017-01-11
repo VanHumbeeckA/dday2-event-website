@@ -1,5 +1,6 @@
 import {Component, Inject, View, Require, Transclude} from "angular-decorators";
 import forEach from "lodash/forEach";
+import get from "lodash/get";
 import {Timetable} from '../../vendor/timetable';
 
 
@@ -15,13 +16,14 @@ import {Timetable} from '../../vendor/timetable';
     ]
 })
 @View({template: require('./timetable.html')})
-@Inject('$log', '$timeout')
+@Inject('$log', '$timeout', '$state')
 @Transclude
 @Require('^parent')
 export class TimeTableComponent {
 
-    constructor($log, $timeout) {
+    constructor($log, $timeout, $state) {
         this.$log = $log;
+        this.$state = $state;
 
         this.$onInit = () => {
             this.initTimeTable();
@@ -40,7 +42,14 @@ export class TimeTableComponent {
         this.timetable.addLocations(this.locations);
 
         forEach(this.ddayEvents, (event, k) => {
-            this.timetable.addEvent(event.name, event.location, event.startDate, event.endDate, event.options)
+
+            if (get(event, "options.data.paragraphs.length", -1) > 0) {
+                console.log(event);
+                let url = this.$state.href('index.line-up-detail', {eventName: event.name});
+                console.log(url);
+                event.options.url = url;
+            }
+            this.timetable.addEvent(event.name, event.location, event.startDate, event.endDate, event.options);
         });
 
     }

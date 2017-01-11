@@ -1,10 +1,19 @@
-import {Service} from "angular-decorators";
+import {Service, Inject} from "angular-decorators";
+import find from "lodash/find";
 
+@Inject("$state")
 @Service("LineUpService")
 export class LineUpService {
 
-    constructor() {
+    constructor($state) {
+        this.$state = $state;
+        this.lineUpData = this.getLineUp();
+    }
 
+    findEvent(name) {
+        let allEvents = this.lineUpData['saturday'].events.concat(this.lineUpData['sunday'].events);
+        let event = find(allEvents, (o) => o.name == name);
+        return event || null;
     }
 
     getLineUp() {
@@ -51,17 +60,14 @@ export class LineUpService {
                         location: 'Roland stand',
                         startDate: new Date(2016, 2, 19, 12, 30),
                         endDate: new Date(2016, 2, 19, 18, 0),
-                        options: {
-                            url: 'index.home' // TODO: add href also to anchor tag! not sufficient for only ui-sref
-                        }
+                        options: {}
                     },
                     {
                         name: 'Geschiedenis van de drumklas',
                         location: 'Zaal 1',
                         startDate: new Date(2016, 2, 19, 12, 30),
                         endDate: new Date(2016, 2, 19, 18, 0),
-                        options: {
-                        }
+                        options: {}
                     },
                     {
                         name: 'Wereld percussie',
@@ -99,25 +105,25 @@ export class LineUpService {
                         options: {}
                     },
                     {
-                        name: 'Clinic: Jordi Geuens',
+                        name: 'Battle: Jordi Geuens & Erik Rademakers',
                         location: 'Podium',
                         startDate: new Date(2016, 2, 19, 13, 0),
-                        endDate: new Date(2016, 2, 19, 14, 0),
+                        endDate: new Date(2016, 2, 19, 14, 15),
                         options: {
                             class: 'event-podium'
                         }
                     },
                     {
-                        name: 'Herman Cambré & Stef Cambré | Drumbattle',
+                        name: 'Battle: Herman Cambré & Stef Cambré',
                         location: 'Podium',
                         startDate: new Date(2016, 2, 19, 14, 30),
-                        endDate: new Date(2016, 2, 19, 15, 30),
+                        endDate: new Date(2016, 2, 19, 15, 45),
                         options: {
                             class: 'event-podium'
                         }
                     },
                     {
-                        name: 'Roland Push Your Drumming 3: Michael Schack',
+                        name: 'Michael Schack',
                         location: 'Podium',
                         startDate: new Date(2016, 2, 19, 16, 0),
                         endDate: new Date(2016, 2, 19, 17, 30),

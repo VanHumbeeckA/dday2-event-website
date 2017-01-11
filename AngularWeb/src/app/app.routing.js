@@ -27,7 +27,7 @@ export const routing = ($stateProvider, $urlRouterProvider) => {
         })
         .state("index.line-up-detail", {
             url: "/line-up/detail/:eventName",
-            template: '<event-detail event="event"></event-detail>',
+            template: '<event-detail></event-detail>',
             params: {
                 event: null
             }
