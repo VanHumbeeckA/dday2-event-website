@@ -80,9 +80,13 @@ Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'ngFileSaver', 'ui.ro
     .add(SponsorCarouselComponent)
     .add(EventDetailComponent)
     // .add(AddToCalComponent)
-    .run(() => {
+    .run(($rootScope) => {
         //amMoment.changeLocale('nl-be');
         FastClick.attach(document.body);
+
+        $rootScope.$on('$stateChangeSuccess', function() {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        });
     })
 ;
 

@@ -1,0 +1,34 @@
+@import "../general/variables.scss";
+
+ul.nav.nav-pills {
+    text-align: center;
+
+    li.uib-tab {
+        float: none;
+        display: inline-block;
+
+        min-width: 30%;
+
+        a {
+          border: 1px solid $pkp-light;
+          width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+  ul.nav.nav-pills {
+    li.uib-tab {
+      min-width: 75%;
+    }
+  }
+}
+
+.timetable .time-entry.timetable-clickable {
+
+  background-color: lighten($pkp-dark, 15);
+  &:hover {
+    background-color: $pkp-dark;
+  }
+}

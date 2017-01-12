@@ -44,9 +44,7 @@ export class TimeTableComponent {
         forEach(this.ddayEvents, (event, k) => {
 
             if (get(event, "options.data.paragraphs.length", -1) > 0) {
-                console.log(event);
                 let url = this.$state.href('index.line-up-detail', {eventName: event.name});
-                console.log(url);
                 event.options.url = url;
             }
             this.timetable.addEvent(event.name, event.location, event.startDate, event.endDate, event.options);

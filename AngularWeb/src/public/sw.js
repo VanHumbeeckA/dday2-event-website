@@ -47,7 +47,8 @@ self.addEventListener('install', function(event) {
                 '/img/background/escheresque_ste_@2X.png',
                 '/img/filler/steunkaart_specimen.JPG',
                 '/img/muziekschool/animal.jpg',
-                '/img/muziekschool/devonk.png'
+                '/img/muziekschool/devonk.png',
+                '/img/muziekschool/kulturama.JPG'
             ]); // TODO: explicitly name files?
         }).catch(function(err) {
             console.error(err);
