@@ -1,7 +1,5 @@
 import {IStateProvider, IUrlRouterProvider} from 'angular-ui-router';
 
-
-
 export const routing = ($stateProvider, $urlRouterProvider) => {
     "use strict";
 

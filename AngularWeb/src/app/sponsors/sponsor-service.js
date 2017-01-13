@@ -176,6 +176,11 @@ export class SponsorService {
                 url: "http://www.handelsgids.be/oud-heverlee/dagbladhandel-daisy/",
                 image: "/img/sponsors/sponsor_50_daisy.JPG",
                 type: 50
+            }, {
+                name: "Erea",
+                url: "http://www.erea.be/",
+                image: "/img/sponsors/sponsor_50_erea.JPG",
+                type: 50
             }
         ]
     }

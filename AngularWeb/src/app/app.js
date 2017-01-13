@@ -23,6 +23,7 @@ import 'angular-animate';
 import 'angular-sanitize';
 import 'angular-touch';
 import 'angular-file-saver';
+import 'angular-local-storage';
 
 import carousel from 'angular-ui-bootstrap/src/carousel';
 import tabs from 'angular-ui-bootstrap/src/tabs'
@@ -33,6 +34,7 @@ import tabs from 'angular-ui-bootstrap/src/tabs'
 
 //// local config
 import {routing} from './app.routing';
+import {localStorageConfig} from './components/localstorage/config';
 
 //// CSS
 import '../style/bootstrap.min.css';
@@ -58,12 +60,22 @@ import {EventComponent} from './components/event/event-component'
 import {BoxColumnComponent} from './components/box-column/box-column-component';
 import {SponsorCarouselComponent} from './components/sponsor-carousel/sponsor-carousel';
 import {EventDetailComponent} from './components/event-detail/event-detail-component';
+import {LocalStorageService} from './components/localstorage/localstorage-service';
 //import {AddToCalComponent} from './components/addtocalendar/addtocalendar-component';
 
 const MODULE_NAME = 'ddayApp';
 
-Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'ngFileSaver', 'ui.router', carousel, tabs])
+Module(MODULE_NAME, [
+    'ngAnimate',
+    'ngSanitize',
+    'ngTouch',
+    'ngFileSaver',
+    'ui.router',
+    'LocalStorageModule',
+    carousel,
+    tabs])
     .config(routing)
+    .config(localStorageConfig)
     .add(NavigationComponent)
     .add(FooterComponent)
     .add(HomeComponent)
@@ -79,12 +91,13 @@ Module(MODULE_NAME, ['ngAnimate', 'ngSanitize', 'ngTouch', 'ngFileSaver', 'ui.ro
     .add(BoxColumnComponent)
     .add(SponsorCarouselComponent)
     .add(EventDetailComponent)
+    .add(LocalStorageService)
     // .add(AddToCalComponent)
     .run(($rootScope) => {
         //amMoment.changeLocale('nl-be');
         FastClick.attach(document.body);
 
-        $rootScope.$on('$stateChangeSuccess', function() {
+        $rootScope.$on('$stateChangeSuccess', function () {
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         });
     })

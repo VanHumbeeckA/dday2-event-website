@@ -22,6 +22,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_50_sioen.jpg',
                 '/img/sponsors/sponsor_50_crescendomusic.JPG',
                 '/img/sponsors/sponsor_50_daisy.JPG',
+                '/img/sponsors/sponsor_50_erea.JPG',
                 '/img/sponsors/sponsor_100_delhaize.jpg',
                 '/img/sponsors/sponsor_100_heatingcenter.jpg',
                 '/img/sponsors/sponsor_100_chantalk.jpg',

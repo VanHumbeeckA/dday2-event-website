@@ -11,8 +11,7 @@
                              alt="{{EventDetailCtrl.eventName}}"
                              class="img-responsive img-border img-left img-max-height">
                         <hr class="visible-xs">
-                        <p><strong>{{EventDetailCtrl.event.options.data.abstract}}</strong></p>
-
+                        <p ng-if="!!EventDetailCtrl.event.options.data.abstract" class="text-center mar30b"><em ng-bind-html="EventDetailCtrl.event.options.data.abstract"></em></p>
                         <p ng-repeat="p in EventDetailCtrl.event.options.data.paragraphs">{{p}}</p>
                     </div>
                 </div>
