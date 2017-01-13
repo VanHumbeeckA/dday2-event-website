@@ -27,6 +27,7 @@
     "angular-animate": "^1.6.1",
     "angular-decorators": "^1.2.0",
     "angular-file-saver": "^1.1.2",
+    "angular-local-storage": "^0.5.0",
     "angular-moment": "^1.0.1",
     "angular-sanitize": "^1.6.1",
     "angular-touch": "^1.6.1",
