@@ -3,7 +3,7 @@ export const SwBootstrap = () => {
         window.addEventListener('load', function() {
 
             // navigator.serviceWorker.register('/sw.js', {scope: './'});
-
+            // OneSignalSDKWorker
             navigator.serviceWorker.register('/OneSignalSDKWorker.js', {scope: './'}).then(function(registration) {
                 // Registration was successful
                 console.log('ServiceWorker NEW registration successful with scope: ', registration.scope);
