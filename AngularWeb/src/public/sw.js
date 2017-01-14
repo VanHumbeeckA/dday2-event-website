@@ -1,7 +1,7 @@
 // SERVICE WORKER
 importScripts('/scripts/cache-polyfill.js');
 
-var CACHE_VERSION = '3';
+var CACHE_VERSION = '4';
 var CURRENT_CACHES = {
     static: 'static-v'+CACHE_VERSION
 };
@@ -23,6 +23,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_50_crescendomusic.JPG',
                 '/img/sponsors/sponsor_50_daisy.JPG',
                 '/img/sponsors/sponsor_50_erea.JPG',
+                '/img/sponsors/sponsor_50_tuincentrummichaux.jpg',
                 '/img/sponsors/sponsor_100_delhaize.jpg',
                 '/img/sponsors/sponsor_100_heatingcenter.jpg',
                 '/img/sponsors/sponsor_100_chantalk.jpg',
@@ -31,6 +32,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_100_terlandinvest.jpg',
                 '/img/sponsors/sponsor_100_toro.png',
                 '/img/sponsors/sponsor_100_traiteurculinesse.JPG',
+                "/img/sponsors/sponsor_100_kia.JPG",
                 '/img/sponsors/sponsor_200_bodycentrum.jpg',
                 '/img/sponsors/sponsor_200_escent.png',
                 '/img/sponsors/sponsor_200_forever.jpg',
@@ -43,6 +45,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_hoofd_handson.png',
                 '/img/sponsors/sponsor_hoofd_roland.png',
                 '/img/sponsors/sponsor_hoofd_vriends.jpg',
+                "/img/sponsors/sponsor_hoofd_equilli.png",
                 '/img/sponsors/sponsor_livingstone.JPG',
                 '/img/background/escheresque_ste.png',
                 '/img/background/escheresque_ste_@2X.png',

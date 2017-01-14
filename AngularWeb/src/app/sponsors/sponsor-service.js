@@ -13,6 +13,11 @@ export class SponsorService {
                 name: "Abels Kristien",
                 text: "Egenhoven",
                 type: 50
+            },
+            {
+                name: "Anne Willekens",
+                text: "Sint-Joris-Weert",
+                type: 100
             }
         ]
     }
@@ -180,6 +185,21 @@ export class SponsorService {
                 name: "Erea",
                 url: "http://www.erea.be/",
                 image: "/img/sponsors/sponsor_50_erea.JPG",
+                type: 50
+            }, {
+                name: "Equilli Boortmeerbeek",
+                url: "http://equilli.com/boortmeerbeek/",
+                image: "/img/sponsors/sponsor_hoofd_equilli.png",
+                type: 500
+            }, {
+                name: "Gilcon - KIA",
+                url: "http://www.gilcon.be/",
+                image: "/img/sponsors/sponsor_100_kia.JPG",
+                type: 100
+            }, {
+                name: "Tuincentrum Michaux",
+                url: "https://www.facebook.com/Tuincentrum-Michaux-153038644764474/",
+                image: "/img/sponsors/sponsor_50_tuincentrummichaux.jpg",
                 type: 50
             }
         ]

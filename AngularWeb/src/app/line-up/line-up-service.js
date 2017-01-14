@@ -93,7 +93,7 @@ export class LineUpService {
                         options: {
                             class: "timetable-clickable",
                             data: {
-                                image: "/img/filler/drumkit.jpg",
+                                image: "/img/filler/drumkit2.jpg",
                                 paragraphs: [
                                     "Altijd al eens van dichtbij willen kennismaken met een drumstel? Dit is je kans. Onze oud-leerlingen (waaronder enkele professionele muzikanten) leren je de eerste stappen, dan is het aan jou om je uit te leven en de opwinding van het drummen te voelen. Speel je zelf al langer? Dan kunnen we jammen!"
                                 ]
