@@ -149,7 +149,7 @@ export class SponsorService {
             }, {
                 name: "Dierenarts An Havet",
                 url: "http://www.dapanhavet.be/",
-                image: "/img/sponsors/sponsor_50_dierenarts.jpg",
+                image: "/img/sponsors/sponsor_50_dierenarts2.JPG",
                 type: 50
             }, {
                 name: "Chan'Talk'",

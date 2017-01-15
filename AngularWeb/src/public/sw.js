@@ -18,7 +18,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/placeholder.jpg',
                 '/img/sponsors/sponsor_50_cola.png',
                 '/img/sponsors/sponsor_50_depotter.jpg',
-                '/img/sponsors/sponsor_50_dierenarts.jpg',
+                '/img/sponsors/sponsor_50_dierenarts2.JPG',
                 '/img/sponsors/sponsor_50_sioen.jpg',
                 '/img/sponsors/sponsor_50_crescendomusic.JPG',
                 '/img/sponsors/sponsor_50_daisy.JPG',
@@ -50,6 +50,7 @@ self.addEventListener('install', function(event) {
                 '/img/background/escheresque_ste.png',
                 '/img/background/escheresque_ste_@2X.png',
                 '/img/filler/steunkaart_specimen.JPG',
+                '/img/filler/drumoffsmall.jpg',
                 '/img/muziekschool/animal.jpg',
                 '/img/muziekschool/devonk.png',
                 '/img/muziekschool/kulturama.JPG'

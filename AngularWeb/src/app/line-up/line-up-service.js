@@ -149,7 +149,7 @@ export class LineUpService {
                         options: {
                             class: 'event-podium timetable-clickable',
                             data: {
-                                image: "/img/filler/drumkit.jpg",
+                                image: "/img/filler/drumoffsmall.jpg",
                                 paragraphs: [
                                     "Herman is drummer in de liveband van Clouseau.",
                                     "Hij is studiodrummer bij Belgische topartiesten (Arno, Vaya Con Dios, Jan Leyers, ...) en is drummer in verschillende tv-programma's (The Voice, De notenclub, Sing that Song, ...).",
