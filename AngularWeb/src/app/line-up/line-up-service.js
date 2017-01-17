@@ -157,7 +157,7 @@ export class LineUpService {
                         options: {
                             class: 'event-podium',
                             data: {
-                                image: "/img/drummers/michael_schack_3.jpg",
+                                image: "/img/drummers/michael_schack_3.JPG",
                                 title: "Push Your Drumming…3! Roland V-Drums tour 2016/2017",
                                 paragraphs: [
                                     "De drumwereld staat zo’n beetje op zijn kop sinds 9 september… Die dag stelde Roland immers de revolutionaire TD-50 drumset voor. De reacties hierop waren aanvankelijk zeer verdeeld, maar na een intense ontwikkelingstijd, enkele succesvolle première shows in Polen, Zwitserland, de UK, Taiwan, onlangs nog het HerfstFest drumfestival in Nederland én de afgelopen Netsky toernee doorheen Europa, heeft Michael Schack reeds bewezen dat die TD-50 héél straf, zo niet het strafste drumstel ooit is. Dat beleef je trouwens niet online, dat moet je live horen en zien.",
