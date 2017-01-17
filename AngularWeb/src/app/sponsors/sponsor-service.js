@@ -201,6 +201,21 @@ export class SponsorService {
                 url: "https://www.facebook.com/Tuincentrum-Michaux-153038644764474/",
                 image: "/img/sponsors/sponsor_50_tuincentrummichaux.jpg",
                 type: 50
+            }, {
+                name: "Hogeschool PXL",
+                url: "https://www.pxl.be/",
+                image: "/img/sponsors/sponsor_hoofd_pxl.png",
+                type: 500
+            }, {
+                name: "Condesco",
+                url: "http://www.condesco.be",
+                image: "/img/sponsors/sponsor_50_condesco.jpg",
+                type: 50
+            }, {
+                name: "Kunstcollectief",
+                url: "http://www.kunstcollectief-oh.be/",
+                image: "/img/sponsors/sponsor_hoofd_kunstcollectief.png",
+                type: 500
             }
         ]
     }

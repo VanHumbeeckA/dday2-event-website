@@ -64,16 +64,7 @@ export class LineUpService {
                         options: {
                             class: "timetable-clickable",
                             data: {
-                                image: "/img/sponsors/sponsor_hoofd_roland.png",
-                                title: "Push Your Drumming…3! Roland V-Drums tour 2016/2017",
-                                paragraphs: [
-                                    "De drumwereld staat zo’n beetje op zijn kop sinds 9 september… Die dag stelde Roland immers de revolutionaire TD-50 drumset voor. De reacties hierop waren aanvankelijk zeer verdeeld, maar na een intense ontwikkelingstijd, enkele succesvolle première shows in Polen, Zwitserland, de UK, Taiwan, onlangs nog het HerfstFest drumfestival in Nederland én de afgelopen Netsky toernee doorheen Europa, heeft Michael Schack reeds bewezen dat die TD-50 héél straf, zo niet het strafste drumstel ooit is. Dat beleef je trouwens niet online, dat moet je live horen en zien.",
-                                    "Ook #PushYourDrumming partner Christophe Cools heeft het een en ander in petto, dus tijd voor een heuse nieuwe toer doorheen de Benelux, de derde #PushYourDrumming inmiddels! Ook nu hoef je geen TD-50 te bestellen of zelfs een V-Drums te bezitten om ten volle van de nieuwe tips en tricks en de vette nieuwe muziek te genieten. #PushYourDrumming3 wil ook nu weer jong én oud inspireren en aanzetten tot eigen creativiteit en extra oefenkracht bij het drummen. En daarbij hoort ook een voor deze derde uitgave speciaal gecreëerde USB-stick, die na afloop van de clinic door elke bezoeker mee naar huis kan worden genomen. Je krijgt er deze keer zelfs een heuse gratis Nederlandstalige video-les bij!",
-                                    "Wil je een snellere voet op jouw basdrumpedaal? Lossere én sterkere armen op die toms? Een betere sound op jouw drumstel? De laatste vette soundmogelijkheden van die nieuwe TD-50 ontdekken en daar inspiratie uithalen voor wat je uit je eigen drumstel kan toveren? Reserveer dan snel jouw zitje op 19 februari 2017 op D-Day 2.0",
-                                    "Net als tijdens de vorige twee uitgaven krijg je ook nu die #PYD3 stick gratis mee, maar enkel en alleen wanneer je de clinic ook in levenden lijve bezoekt. Er zijn achteraf geen downloads mogelijk. Niet te missen, dus we zien je @ #PushYourDrumming3?",
-                                    "Grote drumgroet,",
-                                    "Michael Schack & Christophe Cools"
-                                ]
+                                image: "/img/sponsors/sponsor_hoofd_roland.png"
                             }
                         }
                     },
@@ -167,6 +158,15 @@ export class LineUpService {
                             class: 'event-podium',
                             data: {
                                 image: "/img/drummers/michael_schack_3.jpg",
+                                title: "Push Your Drumming…3! Roland V-Drums tour 2016/2017",
+                                paragraphs: [
+                                    "De drumwereld staat zo’n beetje op zijn kop sinds 9 september… Die dag stelde Roland immers de revolutionaire TD-50 drumset voor. De reacties hierop waren aanvankelijk zeer verdeeld, maar na een intense ontwikkelingstijd, enkele succesvolle première shows in Polen, Zwitserland, de UK, Taiwan, onlangs nog het HerfstFest drumfestival in Nederland én de afgelopen Netsky toernee doorheen Europa, heeft Michael Schack reeds bewezen dat die TD-50 héél straf, zo niet het strafste drumstel ooit is. Dat beleef je trouwens niet online, dat moet je live horen en zien.",
+                                    "Ook #PushYourDrumming partner Christophe Cools heeft het een en ander in petto, dus tijd voor een heuse nieuwe toer doorheen de Benelux, de derde #PushYourDrumming inmiddels! Ook nu hoef je geen TD-50 te bestellen of zelfs een V-Drums te bezitten om ten volle van de nieuwe tips en tricks en de vette nieuwe muziek te genieten. #PushYourDrumming3 wil ook nu weer jong én oud inspireren en aanzetten tot eigen creativiteit en extra oefenkracht bij het drummen. En daarbij hoort ook een voor deze derde uitgave speciaal gecreëerde USB-stick, die na afloop van de clinic door elke bezoeker mee naar huis kan worden genomen. Je krijgt er deze keer zelfs een heuse gratis Nederlandstalige video-les bij!",
+                                    "Wil je een snellere voet op jouw basdrumpedaal? Lossere én sterkere armen op die toms? Een betere sound op jouw drumstel? De laatste vette soundmogelijkheden van die nieuwe TD-50 ontdekken en daar inspiratie uithalen voor wat je uit je eigen drumstel kan toveren? Reserveer dan snel jouw zitje op 19 februari 2017 op D-Day 2.0",
+                                    "Net als tijdens de vorige twee uitgaven krijg je ook nu die #PYD3 stick gratis mee, maar enkel en alleen wanneer je de clinic ook in levenden lijve bezoekt. Er zijn achteraf geen downloads mogelijk. Niet te missen, dus we zien je @ #PushYourDrumming3?",
+                                    "Grote drumgroet,",
+                                    "Michael Schack & Christophe Cools"
+                                ]
                             }
                         }
                     },
