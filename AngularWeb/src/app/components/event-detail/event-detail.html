@@ -13,14 +13,36 @@
                              class="img-responsive  img-thumbnail img-left img-max-height">
                         <hr class="visible-xs">
                         <p ng-if="!!EventDetailCtrl.event.options.data.abstract" class="text-center mar30b"><em ng-bind-html="EventDetailCtrl.event.options.data.abstract"></em></p>
-                        <p ng-repeat="p in EventDetailCtrl.event.options.data.paragraphs">{{p}}</p>
+                        <p ng-repeat="p in EventDetailCtrl.event.options.data.paragraphs" ng-bind-html="p"></p>
                     </div>
                 </div>
-                <div class="row mar30t">
+                <div class="table-responsive mar20t" ng-if="!!EventDetailCtrl.event.options.data.tabledata">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Datum</th>
+                                <th>Event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in EventDetailCtrl.event.options.data.tabledata">
+                                <td>{{e.date}}</td>
+                                <td><p ng-repeat="p in e.event" ng-bind-html="p"></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row mar40t">
                     <div class="col-lg-12">
-                        <div class="text-center">
-                            <a ui-sref="index.line-up" type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-backward"></span> Terug naar programma</a>
-                        </div>
+                        <p ng-repeat="p in EventDetailCtrl.event.options.data.paragraphs2" ng-bind-html="p"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mar30t">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <a ui-sref="index.line-up" type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-backward"></span> Terug naar programma</a>
                     </div>
                 </div>
             </div>

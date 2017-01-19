@@ -28,7 +28,7 @@ import 'angular-local-storage';
 import carousel from 'angular-ui-bootstrap/src/carousel';
 import tabs from 'angular-ui-bootstrap/src/tabs'
 // import 'moment';
-// import 'moment/locale/nl-be';
+import 'moment/locale/nl-be';
 // import 'angular-moment';
 
 
