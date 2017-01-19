@@ -25,6 +25,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_50_erea.JPG',
                 '/img/sponsors/sponsor_50_tuincentrummichaux.jpg',
                 '/img/sponsors/sponsor_50_condesco.jpg',
+                '/img/sponsors/sponsor_100_kbc_blanden.JPG',
                 '/img/sponsors/sponsor_100_delhaize.jpg',
                 '/img/sponsors/sponsor_100_heatingcenter.jpg',
                 '/img/sponsors/sponsor_100_chantalk.jpg',

@@ -216,6 +216,11 @@ export class SponsorService {
                 url: "http://www.kunstcollectief-oh.be/",
                 image: "/img/sponsors/sponsor_hoofd_kunstcollectief.png",
                 type: 500
+            }, {
+                name: "KBC Blanden",
+                url: "http://www.spaargids.be/sparen/kbc/haasrode-blandenstraat-77.html",
+                image: "/img/sponsors/sponsor_100_kbc_blanden.JPG",
+                type: 100
             }
         ]
     }
