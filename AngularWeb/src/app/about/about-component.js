@@ -6,16 +6,17 @@ import orderBy from "lodash/orderBy"
     controllerAs: 'AboutCtrl'
 })
 @View({ template: require('./about.html')})
-@Inject('$q', 'SponsorService')
+@Inject('$q', 'SponsorService', 'HistoriekService')
 export class AboutComponent {
 
-    constructor($q, SponsorService) {
+    constructor($q, SponsorService, HistoriekService) {
         this.sponsorService = SponsorService;
         this.sponsors = orderBy(this.sponsorService.getSponsors(), (s) => s.type, "desc");
         this.supporters = this.sponsorService.getSupporters();
+        this.historiekService = HistoriekService;
     }
 
-    initData() {
-
+    $onInit() {
+        this.historiek = this.historiekService.getHistoriek();
     }
 }

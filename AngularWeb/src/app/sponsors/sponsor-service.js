@@ -18,6 +18,14 @@ export class SponsorService {
                 name: "Anne Willekens",
                 text: "Sint-Joris-Weert",
                 type: 100
+            }, {
+                name: "Muziektherapie LUCA",
+                text: "",
+                type: 100
+            }, {
+                name: "Onze anonieme sympathisanten!",
+                text: "",
+                type: 0
             }
         ]
     }
@@ -221,6 +229,16 @@ export class SponsorService {
                 url: "http://www.spaargids.be/sparen/kbc/haasrode-blandenstraat-77.html",
                 image: "/img/sponsors/sponsor_100_kbc_blanden.JPG",
                 type: 100
+            }, {
+                name: "Vic Firth",
+                url: "http://vicfirth.com/",
+                image: "/img/sponsors/sponsor_50_vicfirth.jpg",
+                type: 51
+            }, {
+                name: "Sabian",
+                url: "http://www.sabian.com/",
+                image: "/img/sponsors/sponsor_50_sabian.jpg",
+                type: 51
             }
         ]
     }

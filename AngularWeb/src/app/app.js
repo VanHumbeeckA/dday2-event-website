@@ -61,6 +61,7 @@ import {BoxColumnComponent} from './components/box-column/box-column-component';
 import {SponsorCarouselComponent} from './components/sponsor-carousel/sponsor-carousel';
 import {EventDetailComponent} from './components/event-detail/event-detail-component';
 import {LocalStorageService} from './components/localstorage/localstorage-service';
+import {HistoriekService} from './about/historiek-service';
 //import {AddToCalComponent} from './components/addtocalendar/addtocalendar-component';
 
 const MODULE_NAME = 'ddayApp';
@@ -92,6 +93,7 @@ Module(MODULE_NAME, [
     .add(SponsorCarouselComponent)
     .add(EventDetailComponent)
     .add(LocalStorageService)
+    .add(HistoriekService)
     // .add(AddToCalComponent)
     .run(($rootScope) => {
         //amMoment.changeLocale('nl-be');

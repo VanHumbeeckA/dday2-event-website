@@ -1,14 +1,44 @@
 <div class="container">
 
-    <box title="Wie zijn wij?" image-src="/img/muziekschool/devonk.png">
+    <box title="Wie zijn wij?" image-src="/img/muziekschool/devonk.png" is-odd="T">
         <p>Wij zijn een groep leerlingen, oud-leerlingen en leerkrachten van de slagwerkklas van de gemeentelijke muziekacademie van Oud-Heverlee (<a href="http://www.academiedevonk.be/">academie De Vonk</a>).</p>
         <p>Naar aanleiding van het 25-jarig bestaan van de slagwerkklas organiseren wij voor de tweede keer een <strong>D(rum)-Day</strong> met de steun van De Vriendenkring en academie De Vonk.</p>
     </box>
 
-    <box title="De slagwerkklas, 25 jaar" image-src="/img/muziekschool/kulturama.JPG" is-odd="T">
-        <p>Leerkrachten: Guy Remmerie, Tom Pipeleers, Pieter Mellaerts.</p>
-        <p>Meer dan 200 leerlingen en oud-leerlingen (Historiek van 25 jaar drumklas nog in opbouw)</p>
-    </box>
+    <title-box title="De slagwerkklas, 25 jaar" image-src="" >
+        <div class="container-fluid">
+            <div class="row mar40t">
+                <div class="col-lg-12">
+                    <img ng-src="/img/muziekschool/kulturama.JPG"
+                         alt="{{EventDetailCtrl.eventName}}"
+                         class="img-responsive  img-thumbnail img-left img-max-height">
+                    <hr class="visible-xs">
+                    <p ng-repeat="p in AboutCtrl.historiek.paragraphs" ng-bind-html="p"></p>
+                </div>
+            </div>
+            <div class="table-responsive mar20t">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Event</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="e in AboutCtrl.historiek.tabledata">
+                        <td>{{e.date}}</td>
+                        <td><p ng-repeat="p in e.event" ng-bind-html="p"></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mar40t">
+                <div class="col-lg-12">
+                    <p ng-repeat="p in AboutCtrl.historiek.paragraphs2" ng-bind-html="p"></p>
+                </div>
+            </div>
+        </div>
+    </title-box>
 
     <title-box title="Met dank aan onze sponsors">
             <div class="col-sm-6 col-md-4 col-lg-4 col-xs-12 img-container-dd" ng-repeat="sponsor in AboutCtrl.sponsors">
