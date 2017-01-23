@@ -24,7 +24,7 @@ export class LineUpService {
                     {
                         name: 'Drumparty',
                         location: 'Podium',
-                        startDate: new Date(2016, 2, 18, 18, 0),
+                        startDate: new Date(2016, 2, 18, 18, 30),
                         endDate: new Date(2016, 2, 18, 23, 0),
                         options: {
                             class: 'event-podium class timetable-clickable',
