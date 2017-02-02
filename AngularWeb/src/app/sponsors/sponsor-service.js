@@ -239,6 +239,16 @@ export class SponsorService {
                 url: "http://www.sabian.com/",
                 image: "/img/sponsors/sponsor_50_sabian.jpg",
                 type: 51
+            }, {
+                name: "Westmalle",
+                url: "http://www.trappistwestmalle.be/",
+                image: "/img/sponsors/sponsor_hoofd_westmalle.JPG",
+                type: 500
+            }, {
+                name: "Koemikoemi",
+                url: "http://www.koemikoemi.be/",
+                image: "/img/sponsors/sponsor_koemikoemi.png",
+                type: 50
             }
         ]
     }

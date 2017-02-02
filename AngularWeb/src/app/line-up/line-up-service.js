@@ -178,7 +178,7 @@ export class LineUpService {
                         name: 'Slotconcert',
                         location: 'Podium',
                         startDate: new Date(2016, 2, 19, 18, 30),
-                        endDate: new Date(2016, 2, 19, 22, 0),
+                        endDate: new Date(2016, 2, 19, 21, 0),
                         options: {
                             class: 'event-podium'
                         }

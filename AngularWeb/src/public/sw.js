@@ -16,6 +16,7 @@ self.addEventListener('install', function(event) {
         caches.open(CURRENT_CACHES['static']).then(function(cache) {
             return cache.addAll([
                 '/img/sponsors/placeholder.jpg',
+                '/img/sponsors/sponsor_koemikoemi.png',
                 '/img/sponsors/sponsor_50_cola.png',
                 '/img/sponsors/sponsor_50_depotter.jpg',
                 '/img/sponsors/sponsor_50_dierenarts2.JPG',
@@ -52,6 +53,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_hoofd_roland.png',
                 '/img/sponsors/sponsor_hoofd_vriends.jpg',
                 "/img/sponsors/sponsor_hoofd_equilli.png",
+                '/img/sponsors/sponsor_hoofd_westmalle.JPG',
                 '/img/sponsors/sponsor_livingstone.JPG',
                 '/img/background/escheresque_ste.png',
                 '/img/background/escheresque_ste_@2X.png',
