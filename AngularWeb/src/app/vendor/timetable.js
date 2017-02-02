@@ -1,4 +1,5 @@
 /*jshint -W079*/
+import get from "lodash/get";
 
 'use strict';
 
@@ -185,7 +186,7 @@ Timetable.Renderer = function(tt) {
                 var elementType = hasURL ? 'a' : 'span';
                 var aNode = node.appendChild(document.createElement(elementType));
                 var smallNode = aNode.appendChild(document.createElement('small'));
-                aNode.title = event.name;
+                aNode.title = get(event, "options.data.shortName", event.name);
 
                 if (hasURL) {
                     aNode.setAttribute('href', event.options.url);
@@ -199,7 +200,7 @@ Timetable.Renderer = function(tt) {
                 aNode.className = hasAdditionalClass ? 'time-entry ' + event.options.class : 'time-entry';
                 aNode.style.width = computeEventBlockWidth(event);
                 aNode.style.left = computeEventBlockOffset(event);
-                smallNode.textContent = event.name;
+                smallNode.textContent = get(event, "options.data.shortName", event.name);
             }
             function computeEventBlockWidth(event) {
                 var start = event.startDate;

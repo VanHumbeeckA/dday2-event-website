@@ -243,7 +243,7 @@ export class SponsorService {
                 name: "Westmalle",
                 url: "http://www.trappistwestmalle.be/",
                 image: "/img/sponsors/sponsor_hoofd_westmalle.JPG",
-                type: 500
+                type: 250
             }, {
                 name: "Koemikoemi",
                 url: "http://www.koemikoemi.be/",
