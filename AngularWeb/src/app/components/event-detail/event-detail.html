@@ -20,14 +20,16 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Datum</th>
-                                <th>Event</th>
+                                <th>Uur - blok</th>
+                                <th>Leerling</th>
+                                <th>Nummer</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="e in EventDetailCtrl.event.options.data.tabledata">
                                 <td>{{e.date}}</td>
-                                <td><p ng-repeat="p in e.event" ng-bind-html="p"></p></td>
+                                <td><strong>{{e.leerling}} ({{e.graad}})</strong></td>
+                                <td><strong>{{e.nummer}}</strong> ({{e.artist}})</td>
                             </tr>
                         </tbody>
                     </table>

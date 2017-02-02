@@ -15,15 +15,12 @@ export class LineUpComponent {
     }
 
     $onInit() {
-        this.initData();
-        this.activeTab = this.localStorageService.getKey(this.preferenceKey) || 0;
-    }
-
-    initData() {
         var data = this.lineUpService.getLineUp();
         this.saturday = data.saturday;
         this.sunday = data.sunday;
+        this.activeTab = this.localStorageService.getKey(this.preferenceKey) || 0;
     }
+
     showTimeLine() {
         this.localStorageService.setKey(this.preferenceKey, 0);
     }
