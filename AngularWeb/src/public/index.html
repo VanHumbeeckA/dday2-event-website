@@ -22,8 +22,36 @@
 
     <!-- SCRIPTS -->
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <!-- prd: 36ad531a-9ff6-44d1-8553-90956e68849e -->
-    <!-- tst: c99bebf8-7df4-4ced-baa9-d463da4f3ba4 -->
+
+    <!-- google search results -->
+    <script type="application/ld+json">
+    [{
+      "@context": "http://schema.org",
+      "@type": "MusicEvent",
+      "name": "D-Day 2.0",
+      "url": "https://www.d-day2.be",
+      "image": "https://www.d-day2.be/img/logo/D-day_zwart.svg",
+      "startDate": "2017-02-18T18:30",
+      "doorTime": "18:00",
+      "endDate": "2017-02-19T22:00",
+      "location": {
+        "@type": "Place",
+        "name": "Zaal de Roosenberg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Maurits Noëstraat 15",
+          "addressLocality": "Oud-Heverlee",
+          "addressCountry": "BE"
+        }
+      },"offers": [{
+        "@type": "Offer",
+        "name": "Free entrance",
+        "category": "primary",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }]
+    }]
+    </script>
     <script>
         var OneSignal = window.OneSignal || [];
         OneSignal.push(["init", {

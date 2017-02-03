@@ -202,7 +202,7 @@ export class SponsorService {
             }, {
                 name: "Gilcon - KIA",
                 url: "http://www.gilcon.be/",
-                image: "/img/sponsors/sponsor_100_kia.JPG",
+                image: "/img/sponsors/sponsor_50_kia_leuven.jpg",
                 type: 100
             }, {
                 name: "Tuincentrum Michaux",
