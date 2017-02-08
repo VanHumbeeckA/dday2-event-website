@@ -17,22 +17,33 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <div id="vertical-timeline" class="vertical-container dark-timeline center-orientation">
-                        <div class="vertical-timeline-block" ng-repeat="e in AboutCtrl.historiek.tabledata">
-                            <div class="vertical-timeline-icon navy-bg">
-                                <i class="fa fa-check-circle" aria-hidden="true"></i>
-                            </div>
+                <div class="col-xs-12 mar20t">
 
-                            <div class="vertical-timeline-content">
-                                <p ng-repeat="p in e.event" ng-bind-html="p"></p>
-                                </p>
-                                <span class="vertical-date dd-date-color">
-                                    {{e.date}}
-                                </span>
+                    <uib-accordion close-others="oneAtATime">
+                        <div uib-accordion-group class="panel-default text-center" is-open="false">
+                            <uib-accordion-heading>
+                                <i class="fa fa-chevron-right"></i>
+                                Klik hier om de volledige historiek te zien
+                                <i class="fa fa-chevron-left"></i>
+                            </uib-accordion-heading>
+                            <div id="vertical-timeline" class="vertical-container dark-timeline center-orientation">
+                                <div class="vertical-timeline-block" ng-repeat="e in AboutCtrl.historiek.tabledata">
+                                    <div class="vertical-timeline-icon navy-bg">
+                                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <p ng-repeat="p in e.event" ng-bind-html="p"></p>
+                                        </p>
+                                        <span class="vertical-date dd-date-color">
+                                                    {{e.date}}
+                                                </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </uib-accordion>
+
                 </div>
             </div>
             <!--<div class="table-responsive mar20t">-->
@@ -51,7 +62,7 @@
                     <!--</tbody>-->
                 <!--</table>-->
             <!--</div>-->
-            <div class="row mar40t">
+            <div class="row mar20t">
                 <div class="col-lg-12">
                     <p ng-repeat="p in AboutCtrl.historiek.paragraphs2" ng-bind-html="p"></p>
                 </div>

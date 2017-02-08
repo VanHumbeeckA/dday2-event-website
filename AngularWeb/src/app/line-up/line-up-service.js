@@ -75,9 +75,22 @@ export class LineUpService {
             geluid: {
                 class: "timetable-clickable theme-info",
                 data: {
-                    shortName: "Gehoor",
+                    shortName: "Geluid",
+                    title: "Bernd Jost - geluidsisolatie",
+                    image: "/img/filler/room.jpg",
                     paragraphs: [
-                        "Slagwerk veel lawaai? Ontdek tijdens deze infosessies hoe je een kamer slagwerkproof kan maken en hoe je je gehoor kan beschermen tegen al het slagwerkgeweld."
+                        "In deze workshop is het de bedoeling om op een eenvoudige manier inzicht te krijgen in akoestisch comfort zowel binnen als buiten een muziek/drum-kamer.  Aandachtspunten bij inrichting of aanpassingswerken worden toegelicht en gekoppeld aan beperkte of ruimere budgetten. Denk bv aan ingrepen om geluidshinder naar aanpalende ruimtes of woningen te reduceren of aan het optimaliseren van de geluidskwaliteit binnen in de ruimte zelf."
+                    ]
+                }
+            },
+            gehoor: {
+                class: "timetable-clickable theme-info",
+                data: {
+                    shortName: "Gehoor",
+                    title: "Lieselot Bolle - gehoorbescherming",
+                    image: "/img/filler/ear.png",
+                    paragraphs: [
+                        "Je gehoor is een kostbaar bezit. Het zorgt ervoor dat je jezelf kunt oriënteren, dat je kan genieten van een streepje muziek of een goed gesprek kan voeren. Heel wat redenen dus om dit gevoelige zintuig voorzichtig te behandelen. Een goede gehoorbescherming kan hierbij van belang zijn. In deze workshop kom je te weten wat de risico’s zijn van lawaai en welke soorten gehoorbescherming er juist bestaan."
                     ]
                 }
             },
@@ -302,45 +315,45 @@ export class LineUpService {
                         options: this.getOptions().sampling
                     },
                     {
-                        name: 'Gehoor & isolatie [Sessie 1]',
-                        location: 'Bureel 2 (klein)',
-                        startDate: new Date(2016, 2, 19, 13, 0),
-                        endDate: new Date(2016, 2, 19, 13, 30),
-                        options: this.getOptions().geluid
-                    },
-                    {
-                        name: 'Gehoor & isolatie [Sessie 2]',
+                        name: 'Gehoorbescherming [Sessie 1]',
                         location: 'Bureel 2 (klein)',
                         startDate: new Date(2016, 2, 19, 13, 30),
                         endDate: new Date(2016, 2, 19, 14, 0),
-                        options: this.getOptions().geluid
+                        options: this.getOptions().gehoor
                     },
                     {
-                        name: 'Gehoor & isolatie [Sessie 3]',
-                        location: 'Bureel 2 (klein)',
-                        startDate: new Date(2016, 2, 19, 14, 30),
-                        endDate: new Date(2016, 2, 19, 15, 0),
-                        options: this.getOptions().geluid
-                    },
-                    {
-                        name: 'Gehoor & isolatie [Sessie 4]',
+                        name: 'Gehoorbescherming [Sessie 2]',
                         location: 'Bureel 2 (klein)',
                         startDate: new Date(2016, 2, 19, 15, 0),
                         endDate: new Date(2016, 2, 19, 15, 30),
-                        options: this.getOptions().geluid
+                        options: this.getOptions().gehoor
                     },
                     {
-                        name: 'Gehoor & isolatie [Sessie 5]',
-                        location: 'Bureel 2 (klein)',
-                        startDate: new Date(2016, 2, 19, 16, 0),
-                        endDate: new Date(2016, 2, 19, 16, 30),
-                        options: this.getOptions().geluid
-                    },
-                    {
-                        name: 'Gehoor & isolatie [Sessie 6]',
+                        name: 'Gehoorbescherming [Sessie 3]',
                         location: 'Bureel 2 (klein)',
                         startDate: new Date(2016, 2, 19, 16, 30),
                         endDate: new Date(2016, 2, 19, 17, 0),
+                        options: this.getOptions().geluid
+                    },
+                    {
+                        name: 'Geluidsisolatie [Sessie 1]',
+                        location: 'Bureel 2 (klein)',
+                        startDate: new Date(2016, 2, 19, 14, 15),
+                        endDate: new Date(2016, 2, 19, 14, 45),
+                        options: this.getOptions().geluid
+                    },
+                    {
+                        name: 'Geluidsisolatie [Sessie 2]',
+                        location: 'Bureel 2 (klein)',
+                        startDate: new Date(2016, 2, 19, 15, 45),
+                        endDate: new Date(2016, 2, 19, 16, 15),
+                        options: this.getOptions().geluid
+                    },
+                    {
+                        name: 'Geluidsisolatie [Sessie 3]',
+                        location: 'Bureel 2 (klein)',
+                        startDate: new Date(2016, 2, 19, 17, 15),
+                        endDate: new Date(2016, 2, 19, 17, 45),
                         options: this.getOptions().geluid
                     },
                     {

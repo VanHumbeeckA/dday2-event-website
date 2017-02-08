@@ -21,15 +21,17 @@
                         <thead>
                             <tr>
                                 <th>Uur - blok</th>
-                                <th>Leerling</th>
                                 <th>Nummer</th>
+                                <th>Leerling</th>
+
                             </tr>
                         </thead>
                         <tbody>
                             <tr ng-repeat="e in EventDetailCtrl.event.options.data.tabledata">
                                 <td>{{e.date}}</td>
-                                <td><strong>{{e.leerling}} ({{e.graad}})</strong></td>
                                 <td><strong>{{e.nummer}}</strong> ({{e.artist}})</td>
+                                <td><strong>{{e.leerling}} ({{e.graad}})</strong></td>
+
                             </tr>
                         </tbody>
                     </table>

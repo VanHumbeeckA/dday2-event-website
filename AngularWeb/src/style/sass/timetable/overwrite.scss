@@ -25,10 +25,16 @@ ul.nav.nav-pills {
   }
 }
 
-.timetable .time-entry.timetable-clickable {
+.timetable .time-entry {
 
-  background-color: lighten($pkp-dark, 15);
-  &:hover {
-    background-color: $pkp-dark;
+
+  padding-left: 8px;
+  padding-right: 8px;
+
+  &.timetable-clickable {
+    background-color: lighten($pkp-dark, 15);
+    &:hover {
+      background-color: $pkp-dark;
+    }
   }
 }

@@ -34,28 +34,28 @@ export class DrumPartyService {
                         artist: "Stromai"
                     },
                     {
-                        date: this.formatDate("18.30"),
+                        date: null,
                         leerling: "Jack Meert",
                         graad: "L1",
                         nummer: "Born In The U.S.A.",
                         artist: "Bruce Springsteen"
                     },
                     {
-                        date: this.formatDate("18.30"),
+                        date: null,
                         leerling: "Can Deno",
                         graad: "L1",
                         nummer: "Where Is My Mind",
                         artist: "The Pixies"
                     },
                     {
-                        date: this.formatDate("18.30"),
+                        date: null,
                         leerling: "Wannes Pelemans",
                         graad: "L1",
                         nummer: "The Lazy Song",
                         artist: "Bruno Mars"
                     },
                     {
-                        date: this.formatDate("18.30"),
+                        date: null,
                         leerling: "Edward Hopwood",
                         graad: "L2",
                         nummer: "Another One Bites The Dust",
@@ -70,70 +70,70 @@ export class DrumPartyService {
                         artist: "Survivor"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Johannes Vermeersch",
                         graad: "L2",
                         nummer: "Imagine",
                         artist: "The Beatles"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Michiel Roggen",
                         graad: "L2",
                         nummer: "Heathens",
                         artist: "Twenty One Pilots"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Rodric Peuskens",
                         graad: "L3",
                         nummer: "Come Together",
                         artist: "The Beatles"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Kasper Hellemans",
                         graad: "L3",
                         nummer: "Enter Sandman",
                         artist: "Metallica"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Felix-Jan Vandoorne",
                         graad: "L3",
                         nummer: "Can’t Stop The Feeling",
                         artist: "Justin Timberlake"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Paul Heijmans",
                         graad: "L3",
-                        nummer: "Yeah 3x",
-                        artist: "Chris Brown"
+                        nummer: "Numb",
+                        artist: "Linkin Park"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Tijs Franckx",
                         graad: "L4",
                         nummer: "Uptown Funk",
                         artist: "Bruno Mars"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Sibren Bergs",
                         graad: "L4",
                         nummer: "One For The Road ",
                         artist: "Arctic Monkeys"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Eli Aerts",
                         graad: "L4",
                         nummer: "Black Betty",
                         artist: "Ram Jam"
                     },
                     {
-                        date: this.formatDate("19.00"),
+                        date: null,
                         leerling: "Eric Huyskens",
                         graad: "M1",
                         nummer: "Master Of Puppets",
@@ -148,70 +148,70 @@ export class DrumPartyService {
                         artist: "Nirvana"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Kamiel Vanhulst",
                         graad: "M1",
                         nummer: "Bombtrack",
                         artist: "Rage Against The Machine"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Demian Van den Berghe",
                         graad: "M1",
                         nummer: "Out Of The Black",
                         artist: "Royal Blood"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Otto Jost",
                         graad: "M1",
                         nummer: "Jeremy",
                         artist: "Pearl Jam"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Ariana Gobert",
                         graad: "M1",
                         nummer: "Trip Switch",
                         artist: "Nothing But Thieves"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Luca Duyckaerts",
                         graad: "M1",
                         nummer: "Dark Necessities",
                         artist: "Red Hot Chili Peppers"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Nienke Ceuppens",
                         graad: "M1",
                         nummer: "Perfect Strangers",
                         artist: "Jonas Blue ft. JP Cooper"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Oberon Defort",
                         graad: "M2",
                         nummer: "The Pretender",
                         artist: "Foo Fighters"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Jesse Pelemans",
                         graad: "M2",
                         nummer: "Billionaire",
                         artist: "Travie McCoy ft. Bruno Mars"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Loulou Hoste",
                         graad: "M2",
                         nummer: "Hopeful",
                         artist: "Bars and Melody"
                     },
                     {
-                        date: this.formatDate("20.00"),
+                        date: null,
                         leerling: "Pieterjan Gilis",
                         graad: "M2",
                         nummer: "Under Pressure ",
@@ -226,70 +226,70 @@ export class DrumPartyService {
                         artist: "Arctic Monkeys"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Jonas Dobbelaere",
                         graad: "M2",
                         nummer: "Under A Glass Moon",
                         artist: "Dream Theater"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Niklas von Werne",
                         graad: "M2",
                         nummer: "Almost Easy",
                         artist: "Avenged Sevenfold"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Eftychia Dimitriadou",
                         graad: "L1",
                         nummer: "The Unforgiven I",
                         artist: "Metallica"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Lieve Jansen",
                         graad: "L2",
                         nummer: "Verloren Hart Verloren Droom",
                         artist: "Johnny White"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Eric Salemi",
                         graad: "L3",
                         nummer: "Everybody’s Been Burned",
                         artist: "Miles Tackett"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Bert Tijskens",
                         graad: "L3",
                         nummer: "Sing Sing Sing",
                         artist: "Benny Goodman"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Willem Verstappen",
                         graad: "M1",
                         nummer: "Apollo’s Theme",
                         artist: "Intero"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Kris De Schepper",
                         graad: "M2",
                         nummer: "Moondance",
                         artist: "Van Morrison"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Simon Tijskens",
                         graad: "M2",
                         nummer: "Ride",
                         artist: "Twenty One Pilots"
                     },
                     {
-                        date: this.formatDate("21.00"),
+                        date: null,
                         leerling: "Wannes Tijskens",
                         graad: "M2",
                         nummer: "Best Of You",
@@ -304,63 +304,63 @@ export class DrumPartyService {
                         artist: "Rise Against"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Jacob Gernay",
                         graad: "H2",
                         nummer: "You Must Be Joking ",
                         artist: "Cirque Du Soleil"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Robbe Decraemer",
                         graad: "H1",
                         nummer: "Knights Of Cydonia",
                         artist: "Muse"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Michiel Herrebout",
                         graad: "H1",
                         nummer: "Metropolis, Pt 1: The Miracle And The Sleeper",
                         artist: "Dream Theater"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Frederik Goossens",
                         graad: "H2",
-                        nummer: "Sacrificed Sons",
-                        artist: "Dream Theater"
+                        nummer: "Killing In The Name",
+                        artist: "Rage Against The Machine"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Senne Smets",
                         graad: "H2",
                         nummer: "Smoke On The Water",
                         artist: "Deep Purple"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Kobe De Greef ",
                         graad: "H3",
                         nummer: "Alone",
                         artist: "Marshmello"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Merel Van der biesen",
                         graad: "H3",
                         nummer: "Dance, Dance",
                         artist: "Fall Out Boy"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Brent Ausloos",
                         graad: "H3",
                         nummer: "Closer",
                         artist: "The Chainsmokers ft. Halsey"
                     },
                     {
-                        date: this.formatDate("22.00"),
+                        date: null,
                         leerling: "Catherine Denayer",
                         graad: "H3",
                         nummer: "Together",

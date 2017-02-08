@@ -26,7 +26,8 @@ import 'angular-file-saver';
 import 'angular-local-storage';
 
 import carousel from 'angular-ui-bootstrap/src/carousel';
-import tabs from 'angular-ui-bootstrap/src/tabs'
+import tabs from 'angular-ui-bootstrap/src/tabs';
+import accordion from 'angular-ui-bootstrap/src/accordion';
 // import 'moment';
 import 'moment/locale/nl-be';
 // import 'angular-moment';
@@ -75,7 +76,8 @@ Module(MODULE_NAME, [
     'ui.router',
     'LocalStorageModule',
     carousel,
-    tabs])
+    tabs,
+    accordion])
     .config(routing)
     .config(localStorageConfig)
     .add(DrumPartyService)
