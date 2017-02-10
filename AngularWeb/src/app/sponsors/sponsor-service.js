@@ -276,6 +276,11 @@ export class SponsorService {
                 url: "mailto:catherine@blueberryconsultancy.be",
                 image: "/img/sponsors/sponsor_BlueBerryConsultancy.jpg",
                 type: 100
+            }, {
+                name: "Valduc",
+                url: "https://en.resto.be/restaurant/hamme-mille/1320-hamme-mille/45320-valduc/",
+                image: "/img/sponsors/sponsor_50_valduc.png",
+                type: 50
             }
         ]
     }

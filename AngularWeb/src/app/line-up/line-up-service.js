@@ -123,7 +123,7 @@ export class LineUpService {
                 ]
             },
             sunday: {
-                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
+                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'Bosmuseum: burelen', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
                 events: [
                     {
                         name: 'Roland electronische try out',
@@ -164,6 +164,18 @@ export class LineUpService {
                             class: "theme-commercieel",
                             data: {
                                 image: "/img/muziekschool/kulturama.JPG",
+                            }
+                        }
+                    },
+                    {
+                        name: 'Expositie kunstcollectief OH',
+                        location: 'Bosmuseum: burelen',
+                        startDate: new Date(2016, 2, 19, 12, 30),
+                        endDate: new Date(2016, 2, 19, 17, 45),
+                        options: {
+                            class: "",
+                            data: {
+
                             }
                         }
                     },
