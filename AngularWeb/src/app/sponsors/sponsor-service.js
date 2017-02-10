@@ -249,12 +249,14 @@ export class SponsorService {
                 url: "http://www.koemikoemi.be/",
                 image: "/img/sponsors/sponsor_koemikoemi.png",
                 type: 50
-            }, {
-                name: "Betty Dupont",
-                url: "http://www.bettydupont.be/",
-                image: "/img/sponsors/sponsor_500_bettydupont.jpg",
-                type: 500
-            }, {
+            },
+            // {
+            //     name: "Betty Dupont",
+            //     url: "http://www.bettydupont.be/",
+            //     image: "/img/sponsors/sponsor_500_bettydupont.jpg",
+            //     type: 500
+            // },
+            {
                 name: "Brantano",
                 url: "https://www.brantano.be/nl/",
                 image: "/img/sponsors/sponsor_50_brantano.png",
@@ -264,6 +266,16 @@ export class SponsorService {
                 url: "http://www.spaargids.be/sparen/ing/bierbeek-dorpsstraat-31.html",
                 image: "/img/sponsors/sponsor_50_INGBierbeek.jpg",
                 type: 50
+            }, {
+                name: "sponsor_50_ijsbaanleuven.png",
+                url: "http://www.ijsbaanleuven.be/",
+                image: "/img/sponsors/sponsor_50_ijsbaanleuven.png",
+                type: 50
+            }, {
+                name: "Blue Berry Consultancy",
+                url: "mailto:catherine@blueberryconsultancy.be",
+                image: "/img/sponsors/sponsor_BlueBerryConsultancy.jpg",
+                type: 100
             }
         ]
     }

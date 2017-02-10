@@ -182,6 +182,13 @@ export class LineUpService {
                         options: this.getOptions().wereldpercussie
                     },
                     {
+                        name: 'Wereld percussie [sessie 3]',
+                        location: 'Bosmuseum',
+                        startDate: new Date(2016, 2, 19, 17, 0),
+                        endDate: new Date(2016, 2, 19, 17, 45),
+                        options: this.getOptions().wereldpercussie
+                    },
+                    {
                         name: 'Marimba [sessie 1]',
                         location: 'Bosmuseum',
                         startDate: new Date(2016, 2, 19, 14, 0),
