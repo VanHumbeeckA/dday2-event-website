@@ -31,7 +31,7 @@ export class DrumPartyService {
                         leerling: "Lean Vannes",
                         graad: "L1",
                         nummer: "Papaoutai",
-                        artist: "Stromai"
+                        artist: "Stromae"
                     },
                     {
                         date: null,

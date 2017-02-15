@@ -88,7 +88,7 @@ export class LineUpService {
                 data: {
                     shortName: "Gehoor",
                     title: "Lieselot Bolle - gehoorbescherming",
-                    image: "/img/filler/ear.png",
+                    image: "/img/filler/aurelis.jpg",
                     paragraphs: [
                         "Je gehoor is een kostbaar bezit. Het zorgt ervoor dat je jezelf kunt oriënteren, dat je kan genieten van een streepje muziek of een goed gesprek kan voeren. Heel wat redenen dus om dit gevoelige zintuig voorzichtig te behandelen. Een goede gehoorbescherming kan hierbij van belang zijn. In deze workshop kom je te weten wat de risico’s zijn van lawaai en welke soorten gehoorbescherming er juist bestaan."
                     ]

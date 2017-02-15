@@ -33,6 +33,7 @@ self.addEventListener('install', function(event) {
                 '/img/sponsors/sponsor_50_INGBierbeek.jpg',
                 '/img/sponsors/sponsor_50_ijsbaanleuven.png',
                 '/img/sponsors/sponsor_50_valduc.png',
+                '/img/sponsors/sponsor_50_aertgeerts.JPG',
                 '/img/sponsors/sponsor_100_kbc_blanden.JPG',
                 '/img/sponsors/sponsor_100_delhaize.jpg',
                 '/img/sponsors/sponsor_100_heatingcenter.jpg',

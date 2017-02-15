@@ -281,6 +281,11 @@ export class SponsorService {
                 url: "https://en.resto.be/restaurant/hamme-mille/1320-hamme-mille/45320-valduc/",
                 image: "/img/sponsors/sponsor_50_valduc.png",
                 type: 50
+            }, {
+                name: "AERTGEERTS BVBA",
+                url: "mailto:info@aertgeertsbvba.be",
+                image: "/img/sponsors/sponsor_50_aertgeerts.JPG",
+                type: 50
             }
         ]
     }
