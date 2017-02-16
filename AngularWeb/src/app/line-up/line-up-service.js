@@ -28,7 +28,7 @@ export class LineUpService {
             wereldpercussie: {
                 class: "timetable-clickable theme-workshop",
                 data: {
-                    shortName: 'Wereld percussie',
+                    shortName: 'Exotische percussie',
                     image: "/img/filler/workshops.jpg",
                     paragraphs: [
                         "Nataniel Melo (Terrakota, Clac) laat je kennismaken met de pracht van slaginstrumenten uit alle werelddelen. Conga, bata, surdo, talking drum, kalimba, mbira, balafon… En nog veel meer. Ontdek de oneindige klanken van de percussiewereld en probeer ze zelf uit"
@@ -123,7 +123,7 @@ export class LineUpService {
                 ]
             },
             sunday: {
-                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'Bosmuseum: burelen', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
+                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'Bosmuseum, burelen', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
                 events: [
                     {
                         name: 'Roland electronische try out',
@@ -169,7 +169,7 @@ export class LineUpService {
                     },
                     {
                         name: 'Expositie kunstcollectief OH',
-                        location: 'Bosmuseum: burelen',
+                        location: 'Bosmuseum, burelen',
                         startDate: new Date(2016, 2, 19, 12, 30),
                         endDate: new Date(2016, 2, 19, 17, 45),
                         options: {
@@ -180,21 +180,21 @@ export class LineUpService {
                         }
                     },
                     {
-                        name: 'Wereld percussie [sessie 1]',
+                        name: 'Exotische percussie [sessie 1]',
                         location: 'Bosmuseum',
                         startDate: new Date(2016, 2, 19, 13, 0),
                         endDate: new Date(2016, 2, 19, 13, 45),
                         options: this.getOptions().wereldpercussie
                     },
                     {
-                        name: 'Wereld percussie [sessie 2]',
+                        name: 'Exotische percussie [sessie 2]',
                         location: 'Bosmuseum',
                         startDate: new Date(2016, 2, 19, 15, 0),
                         endDate: new Date(2016, 2, 19, 15, 45),
                         options: this.getOptions().wereldpercussie
                     },
                     {
-                        name: 'Wereld percussie [sessie 3]',
+                        name: 'Exotische percussie [sessie 3]',
                         location: 'Bosmuseum',
                         startDate: new Date(2016, 2, 19, 17, 0),
                         endDate: new Date(2016, 2, 19, 17, 45),
@@ -352,7 +352,7 @@ export class LineUpService {
                         location: 'Bureel 2 (klein)',
                         startDate: new Date(2016, 2, 19, 16, 30),
                         endDate: new Date(2016, 2, 19, 17, 0),
-                        options: this.getOptions().geluid
+                        options: this.getOptions().gehoor
                     },
                     {
                         name: 'Geluidsisolatie [Sessie 1]',
