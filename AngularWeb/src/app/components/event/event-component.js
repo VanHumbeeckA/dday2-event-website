@@ -30,4 +30,8 @@ export class EventComponent {
     isClickable() {
         return get(this.event, "options.data.paragraphs.length", -1) > 0;
     }
+
+    eventClass() {
+        return "class-" + get(this.event, "location", "").replace(/\(.+\)/, "").replace(/\s+/g, "-") || "";
+    }
 }

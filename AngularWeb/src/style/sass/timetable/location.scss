@@ -1,0 +1,43 @@
+// ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'KunstCollectief', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)']
+
+@import "../general/variables.scss";
+
+.class-Zaal > .dd-event-tab {
+   background-color: $bg-zaal;
+}
+
+.class-Bureel-2- > .dd-event-tab {
+  background-color: $bg-bureel-2;
+}
+
+.class-Bureel-1- > .dd-event-tab {
+  background-color: $bg-bureel-2;
+}
+
+.class-Jeugdhuis > .dd-event-tab {
+  background-color: $bg-jeugdhuis;
+}
+
+.class-Bosmuseum > .dd-event-tab {
+  background-color: $bg-bosmuseum;
+}
+
+.class-KunstCollectief > .dd-event-tab {
+  background-color: $bg-bosmuseum;
+}
+
+.class-KunstCollectief- > .dd-event-tab {
+  background-color: $bg-bosmuseum;
+}
+
+.class-Inkomhal-A > .dd-event-tab {
+  background-color: $bg-inkomhal;
+}
+
+.class-Inkomhal-B > .dd-event-tab {
+  background-color: $bg-inkomhal;
+}
+
+.class-Zaal-zijkant > .dd-event-tab {
+  background-color: $bg-zaal;
+}

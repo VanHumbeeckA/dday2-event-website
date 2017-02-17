@@ -123,7 +123,7 @@ export class LineUpService {
                 ]
             },
             sunday: {
-                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'Bosmuseum', 'Bosmuseum, burelen', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
+                locations: ['Zaal', 'Zaal zijkant', 'Inkomhal A', 'Inkomhal B',  'KunstCollectief', 'KunstCollectief ', 'Jeugdhuis', 'Bureel 1 (groot)', 'Bureel 2 (klein)'],
                 events: [
                     {
                         name: 'Roland electronische try out',
@@ -159,7 +159,7 @@ export class LineUpService {
                         name: 'Geschiedenis van de drumklas',
                         location: 'Zaal zijkant',
                         startDate: new Date(2016, 2, 19, 12, 30),
-                        endDate: new Date(2016, 2, 19, 20, 30),
+                        endDate: new Date(2016, 2, 19, 21, 30),
                         options: {
                             class: "theme-commercieel",
                             data: {
@@ -169,7 +169,7 @@ export class LineUpService {
                     },
                     {
                         name: 'Expositie kunstcollectief OH',
-                        location: 'Bosmuseum, burelen',
+                        location: 'KunstCollectief ',
                         startDate: new Date(2016, 2, 19, 12, 30),
                         endDate: new Date(2016, 2, 19, 17, 45),
                         options: {
@@ -181,35 +181,35 @@ export class LineUpService {
                     },
                     {
                         name: 'Exotische percussie [sessie 1]',
-                        location: 'Bosmuseum',
+                        location: 'KunstCollectief',
                         startDate: new Date(2016, 2, 19, 13, 0),
                         endDate: new Date(2016, 2, 19, 13, 45),
                         options: this.getOptions().wereldpercussie
                     },
                     {
                         name: 'Exotische percussie [sessie 2]',
-                        location: 'Bosmuseum',
+                        location: 'KunstCollectief',
                         startDate: new Date(2016, 2, 19, 15, 0),
                         endDate: new Date(2016, 2, 19, 15, 45),
                         options: this.getOptions().wereldpercussie
                     },
                     {
                         name: 'Exotische percussie [sessie 3]',
-                        location: 'Bosmuseum',
+                        location: 'KunstCollectief',
                         startDate: new Date(2016, 2, 19, 17, 0),
                         endDate: new Date(2016, 2, 19, 17, 45),
                         options: this.getOptions().wereldpercussie
                     },
                     {
                         name: 'Marimba [sessie 1]',
-                        location: 'Bosmuseum',
+                        location: 'KunstCollectief',
                         startDate: new Date(2016, 2, 19, 14, 0),
                         endDate: new Date(2016, 2, 19, 14, 45),
                         options: this.getOptions().marimba
                     },
                     {
                         name: 'Marimba [sessie 2]',
-                        location: 'Bosmuseum',
+                        location: 'KunstCollectief',
                         startDate: new Date(2016, 2, 19, 16, 0),
                         endDate: new Date(2016, 2, 19, 16, 45),
                         options: this.getOptions().marimba
