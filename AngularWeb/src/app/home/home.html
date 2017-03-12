@@ -1,12 +1,12 @@
 <div class="container">
 
-    <!--<div class="row">-->
-        <!--<div class="alert alert-danger text-center text-danger">-->
-            <!--<strong>De winnende tombolanummers zullen spoedig op de website verschijnen. Prijzen kunnen daarna afgehaald worden na de krokusvakantie.</strong>-->
-            <!--<br>Wilt een melding ontvangen wanneer de tombola nummers op de website staan? Klik dan rechts onderaan op het berichten-icoon.-->
-            <!--<br>(Ziet u geen icoon? Dan ondersteunt uw toestel en/of browser deze feature niet)-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="row">
+        <div class="alert alert-success text-center text-danger">
+            <strong>De winnende tombolanummers zijn bekend. Prijzen kunnen worden afgehaald op de muziekschool.</strong>
+            <br><br>
+            <button type="button" class="btn btn-success" ng-click="HomeCtrl.goToNumbers()">Ga naar winnende tombola-nummers</button>
+        </div>
+    </div>
 
     <div class="row">
         <div class="box ">
@@ -51,20 +51,19 @@
         <p>Steunkaarten zijn te koop vanaf 9 januari. Deze steunkaarten doen ook dienst als <strong>tombola ticket</strong>, dus bewaar ze goed en neem ze zeker mee naar D-Day!</p>
     </box>
 
-    <!--<div class="row">-->
-        <!--<div class="box ">-->
-            <!--<div class="col-lg-12 text-center " >-->
-                <!--<img class="img-responsive img-center" ng-src="/img/filler/flyer.JPG" alt="D-Day 2.0" height="300px">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--<box title="Doorlopend workshops" image-src="/img/filler/drumkit.jpg" is-odd="T">-->
-        <!--<p>Maak van dichtbij kennis met slagwerk tijdens de doorlopende workshops & initiaties: <strong>wereldpercussie</strong>, <strong>initiatie drums</strong>, <strong>samples & loops</strong>, &mldr;</p>-->
-    <!--</box>-->
-
-    <!--<box title="Slotconcert" image-src="/img/filler/marimba2.jpg">-->
-        <!--<p>Slotconcert met meer dan 50 leerlingen en oud-leerlingen</p>-->
-    <!--</box>-->
+    <title-box title="Winnende tombola tickets" id="winning-numbers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <strong>Dit zijn de winnende tombolanummers. Prijzen kunnen worden afgehaald op de muziekschool.</strong>
+                </div>
+            </div>
+            <div class="row text-center mar20t">
+                <div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="ticket in HomeCtrl.tombolatickets">
+                    {{ticket}}
+                </div>
+            </div>
+        </div>
+    </title-box>
 
 </div>

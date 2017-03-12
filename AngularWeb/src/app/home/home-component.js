@@ -5,14 +5,22 @@ import {Component, Inject, View} from "angular-decorators";
     controllerAs: 'HomeCtrl'
 })
 @View({ template: require('./home.html')})
-@Inject('$q')
+@Inject('$anchorScroll', '$location')
 export class HomeComponent {
 
 
-    constructor($q) {
+    constructor($anchorScroll, $location) {
         this.slides = [];
+        this.tombolatickets = [];
         this.myInterval = 5000;
         this.initData();
+        this.$anchorScroll = $anchorScroll;
+        this.$location = $location;
+    }
+
+    goToNumbers() {
+        this.$location.hash('winning-numbers');
+        this.$anchorScroll();
     }
 
     initData() {
@@ -23,6 +31,28 @@ export class HomeComponent {
             image: "img/slide-1.jpg",
             caption: "Coffee"
         });
+
+        this.tombolatickets = [
+            "0604",
+            "0607",
+            "1365",
+            "1405",
+            "1285",
+            "1435",
+            "0700",
+            "1006",
+            "0345",
+            "0516",
+            "0615",
+            "1089",
+            "1088",
+            "0541",
+            "1449",
+            "1320",
+            "0745",
+            "0403"
+        ];
     }
+
 }
 
